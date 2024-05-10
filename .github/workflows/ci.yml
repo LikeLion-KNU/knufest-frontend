@@ -39,7 +39,7 @@ jobs:
             - name: Code Checkout
               uses: actions/checkout@v2
             - name: Install Dependencies
-              run: npm ci
+              run: npm i
             - name: Lint Code
               run: npm run lint
             - name: Format Code
