@@ -23,7 +23,7 @@ jobs:
             - name: Code Checkout
               uses: actions/checkout@v2
             - name: Install Dependencies
-              run: npm ci
+              run: npm i
             - name: Typescript Compile
               run: npm run compile
 
