@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Pagination } from "@/common/navigation/Pagination";
+import { Pagination } from "@/components/navigation/Pagination";
 
 import { PageContainer, MainContent, StyledImage } from "@/pages/HomePage.styled";
 

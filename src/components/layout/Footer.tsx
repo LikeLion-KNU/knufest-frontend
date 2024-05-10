@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FooterContainer } from "@/common/layout/Footer.styled";
+import { FooterContainer } from "@/components/layout/Footer.styled";
 
 const Footer: React.FC = () => {
     return (

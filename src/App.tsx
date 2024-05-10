@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import { Route, Routes } from "react-router-dom";
 
-import { MainLayout } from "@/common/layout/MainLayout";
+import { MainLayout } from "@/components/layout/MainLayout";
 
 import HomePage from "@/pages/HomePage";
 
