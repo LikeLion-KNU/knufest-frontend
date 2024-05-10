@@ -28,7 +28,7 @@ export const Pagination: React.FC = () => {
     return (
         <PaginationContainer>
             <PageSkipButton onClick={handlePrevBtnClick}>{"<"}</PageSkipButton>
-            {Array.from({ length: perPage }, (v, k) => page + k).map((page) => {
+            {Array.from({ length: perPage }, (_, k) => page + k).map((page) => {
                 return (
                     <PageButton active={page === currentPage} onClick={handlePageBtnClick}>
                         {page}
