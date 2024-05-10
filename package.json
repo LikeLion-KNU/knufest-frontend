@@ -14,7 +14,9 @@
     "dependencies": {
         "@reduxjs/toolkit": "^2.2.4",
         "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "eslint-config-prettier": "^9.1.0",
         "framer-motion": "^11.1.7",
+        "prettier": "^3.2.5",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-icons": "^5.2.0",

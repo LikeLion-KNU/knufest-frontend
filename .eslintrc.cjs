@@ -26,6 +26,7 @@ module.exports = {
         "@typescript-eslint/no-misused-promises": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-non-null-assertion": "off",
+        "@typescript-eslint/no-redundant-type-constituents": "off",
         "prettier/prettier": [
             "error",
             {
@@ -34,5 +35,5 @@ module.exports = {
         ],
     },
 
-    ignorePatterns: [".eslintrc.cjs"],
+    ignorePatterns: [".eslintrc.cjs", "vite.config.ts"],
 };
