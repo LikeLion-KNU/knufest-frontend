@@ -6,7 +6,7 @@ export interface IText {
 }
 
 export const Text = styled.span<IText>`
-    font-weight: ${(props) => props.weight};
+    font-weight: ${(props) => props.weight ?? "normal"};
 
     font-size: ${(props) => {
         switch (props.size) {
