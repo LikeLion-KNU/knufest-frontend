@@ -8,9 +8,7 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:react-hooks/recommended",
-        "plugin:@tanstack/eslint-plugin-query/recommended",
         "plugin:prettier/recommended",
-        "plugin:storybook/recommended",
     ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
@@ -36,5 +34,5 @@ module.exports = {
         ],
     },
 
-    ignorePatterns: ["server.js", ".eslintrc.cjs", "ssr.js"],
+    ignorePatterns: [".eslintrc.cjs"],
 };
