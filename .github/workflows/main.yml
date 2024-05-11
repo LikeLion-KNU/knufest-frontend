@@ -32,5 +32,5 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: Uploasd to S3
-        run: aws s3 cp --recursive --region ap-northeast-2 build
+        run: aws s3 cp --recursive --region ap-northeast-2 dist
           s3://knufest2024
