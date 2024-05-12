@@ -35,6 +35,10 @@ const itemVariants: Variants = {
 const Navigation: React.FC = () => {
     const [show, setShow] = useState(false);
     const navigate = useNavigate();
+    const handleNavLinkClick = (path: string) => {
+        setShow(false);
+        navigate(path);
+    };
 
     return (
         <StyledNav>
@@ -48,16 +52,16 @@ const Navigation: React.FC = () => {
             </NavHeader>
             <motion.ul initial="closed" animate={show ? "open" : "closed"} variants={listVariants}>
                 <NavItem variants={itemVariants}>
-                    <NavLink onClick={() => navigate("/booth")}>부스 별 지도</NavLink>
+                    <NavLink onClick={() => handleNavLinkClick("/booth")}>부스 별 지도</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink onClick={() => navigate("/guests")}>Special Guest</NavLink>
+                    <NavLink onClick={() => handleNavLinkClick("/guests")}>Special Guest</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink onClick={() => navigate("/timetable")}>이벤트 일정</NavLink>
+                    <NavLink onClick={() => handleNavLinkClick("/timetable")}>이벤트 일정</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink onClick={() => navigate("/contributors")}>만든이들</NavLink>
+                    <NavLink onClick={() => handleNavLinkClick("/contributors")}>만든이들</NavLink>
                 </NavItem>
             </motion.ul>
         </StyledNav>
