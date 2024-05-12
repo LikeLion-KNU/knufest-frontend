@@ -32,13 +32,13 @@ const BoothListPage: React.FC = () => {
     return (
         <PageContainer>
             <MainContent>
-                <p>{visitorId}</p>
                 {/*<Map />*/}
                 <VisibleList variants={listVariants} initial="hidden" animate="visible">
                     {lists.map((name, index) => {
                         return <Booth index={index} name={name} heart={heart} />;
                     })}
                 </VisibleList>
+                <p>{visitorId}</p>
             </MainContent>
         </PageContainer>
     );
