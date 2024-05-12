@@ -37,7 +37,7 @@ export const StyledImage = styled.div`
 `;
 
 export const ElementContainer = styled.div`
-    width: 450px;
+    width: 80%;
     margin: 2rem;
 
     div {
