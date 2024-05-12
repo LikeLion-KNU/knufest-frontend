@@ -48,16 +48,16 @@ const Navigation: React.FC = () => {
             </NavHeader>
             <motion.ul initial="closed" animate={show ? "open" : "closed"} variants={listVariants}>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="/booth">부스 별 지도</NavLink>
+                    <NavLink onClick={() => navigate("/booth")}>부스 별 지도</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="/guests">Special Guest</NavLink>
+                    <NavLink onClick={() => navigate("/guests")}>Special Guest</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="/timetable">이벤트 일정</NavLink>
+                    <NavLink onClick={() => navigate("/timetable")}>이벤트 일정</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="/contributors">만든이들</NavLink>
+                    <NavLink onClick={() => navigate("/contributors")}>만든이들</NavLink>
                 </NavItem>
             </motion.ul>
         </StyledNav>
