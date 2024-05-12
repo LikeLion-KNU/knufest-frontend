@@ -16,7 +16,7 @@ export default ({ mode }: { mode: string }) => {
                 minify: true,
                 inject: {
                     data: {
-                        google_analytics: env.VITE_GOOGLE_ANALYTICS,
+                        VITE_GOOGLE_ANALYTICS: env.VITE_GOOGLE_ANALYTICS,
                     },
                 },
             }),
