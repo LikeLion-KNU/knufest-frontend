@@ -13,6 +13,7 @@ export const Button = styled.button<IButton>`
 
     border: none;
     border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     color: #fff;
     background-color: ${(props) => {
