@@ -44,9 +44,7 @@ export const NavHeader = styled.div`
     gap: 100px;
 `;
 
-export const Hapuruna = styled.h3`
-    color: black;
-`;
+export const Hapuruna = styled.img``;
 
 export const MenuIcon = styled.div`
     cursor: pointer;

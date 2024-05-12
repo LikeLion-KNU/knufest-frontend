@@ -31,7 +31,7 @@ export const Countdown: React.FC<ICountdown> = ({ targetDate }) => {
             <Text size="xl" weight="bold" variant="lightpurple">
                 {displayTime}
             </Text>
-            <Text size="m" weight="normal" variant="darkpurple">
+            <Text size="xs" weight="normal" variant="darkpurple">
                 UTC+9 | {targetDate.toLocaleDateString("ko-KR", dateOptions)}{" "}
                 {targetDate.toLocaleTimeString("en-US", timeOptions)}
             </Text>

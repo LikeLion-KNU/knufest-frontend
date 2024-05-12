@@ -11,20 +11,14 @@ const Footer: React.FC = () => {
             <TopBorder />
             <Logo src={logo} alt="Event Logo" />
             <EventName>
-                <Text size="l" weight="normal" variant="purple">
+                <Text size="m" weight="bold" variant="purple">
                     2024 경북대학교 대동제
                 </Text>
             </EventName>
             <LegalLinks>
                 <LegalText>
                     <Text size="s" weight="normal" variant="lightpurple">
-                        © 2024 LikeLion
-                    </Text>
-                    <Text size="xs" weight="normal" variant="purple">
-                        &nbsp;|&nbsp;
-                    </Text>
-                    <Text size="s" weight="normal" variant="lightpurple">
-                        All Rights Reserved
+                        © 2024 LikeLion, All Rights Reserved.
                     </Text>
                 </LegalText>
                 <LegalText>

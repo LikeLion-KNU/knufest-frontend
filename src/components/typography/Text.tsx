@@ -20,7 +20,7 @@ export const Text = styled.span<IText>`
             case "l":
                 return "22px";
             case "xl":
-                return "56px";
+                return "40px";
             default:
                 return props.size;
         }
