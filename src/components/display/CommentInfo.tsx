@@ -35,6 +35,7 @@ const CommentInfo: React.FC = () => {
                 ))}
             </CommentList>
             <Pagenation />
+            <hr />
             <CommentForm />
         </>
     );
