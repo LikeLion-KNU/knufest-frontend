@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { motion, Variants } from "framer-motion";
+
+import HapurunaIcon from "@/assets/hapuruna.png";
 
 import { StyledNav, NavHeader, Hapuruna, MenuIcon, MenuBar, NavItem, NavLink } from "./Navigation.styled";
 
@@ -31,11 +34,12 @@ const itemVariants: Variants = {
 
 const Navigation: React.FC = () => {
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <StyledNav>
             <NavHeader>
-                <Hapuruna>하푸르나</Hapuruna>
+                <Hapuruna src={HapurunaIcon} width={60} onClick={() => navigate("/")} />
                 <MenuIcon onClick={() => setShow(!show)}>
                     <MenuBar />
                     <MenuBar />
@@ -44,16 +48,16 @@ const Navigation: React.FC = () => {
             </NavHeader>
             <motion.ul initial="closed" animate={show ? "open" : "closed"} variants={listVariants}>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">부스 별 지도</NavLink>
+                    <NavLink href="/booth">부스 별 지도</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">Special Guest</NavLink>
+                    <NavLink href="/guests">Special Guest</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">이벤트 일정</NavLink>
+                    <NavLink href="/timetable">이벤트 일정</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">만든이들</NavLink>
+                    <NavLink href="/contributors">만든이들</NavLink>
                 </NavItem>
             </motion.ul>
         </StyledNav>
