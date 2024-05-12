@@ -1,11 +1,18 @@
-import { BoothInfoWrapper, CommentWrapper, DetailPageWrapper, SplitWrapper } from "@/pages/BoothDetailPage.styled";
+import BoothInfo from "@/components/display/BoothInfo";
+import CommentInfo from "@/components/display/CommentInfo";
+
+import { BoothInfoWrapper, CommentWrapper, DetailPageWrapper } from "@/pages/BoothDetailPage.styled";
 
 export default function BoothDetailPage() {
     return (
         <DetailPageWrapper>
-            <BoothInfoWrapper></BoothInfoWrapper>
-            <SplitWrapper></SplitWrapper>
-            <CommentWrapper></CommentWrapper>
+            <BoothInfoWrapper>
+                <BoothInfo />
+            </BoothInfoWrapper>
+            <hr />
+            <CommentWrapper>
+                <CommentInfo />
+            </CommentWrapper>
         </DetailPageWrapper>
     );
 }
