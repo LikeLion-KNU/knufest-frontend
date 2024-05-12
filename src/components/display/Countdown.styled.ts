@@ -8,7 +8,7 @@ export const CountdownContainer = styled.div`
     font-size: 2rem;
     color: #333;
     text-align: center;
-    padding: 30px 60px;
+    padding: 40px 20px;
 
     span {
         margin-bottom: 1rem;
