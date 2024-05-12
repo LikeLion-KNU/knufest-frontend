@@ -3,7 +3,8 @@ import React from "react";
 import { Variants } from "framer-motion";
 
 import { Booth } from "@/components/display/Booth";
-import Navigation from "@/components/navigation/Navigation";
+
+import { useVisitor } from "@/hooks/useVisitor";
 
 // import Map from "./Map";
 import { PageContainer, MainContent, VisibleList } from "./BoothListPage.styled";
@@ -26,10 +27,12 @@ const BoothListPage: React.FC = () => {
     const heart = 356;
     //list랑 index, heart는 받아온 값으로 수정
 
+    const { visitorId } = useVisitor();
+
     return (
         <PageContainer>
-            <Navigation />
             <MainContent>
+                <p>{visitorId}</p>
                 {/*<Map />*/}
                 <VisibleList variants={listVariants} initial="hidden" animate="visible">
                     {lists.map((name, index) => {
