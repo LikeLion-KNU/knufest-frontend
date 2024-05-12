@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const PageContainer = styled.div`
     width: 100%;
-    min-height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -19,8 +18,29 @@ export const MainContent = styled.div`
     position: relative;
 `;
 
-export const StyledImage = styled.img`
+export const StyledImage = styled.div`
+    position: relative;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+`;
+
+export const ElementContainer = styled.div`
+    width: 450px;
+    margin: 2rem;
+
+    div {
+        margin: 1rem 0;
+    }
 `;
