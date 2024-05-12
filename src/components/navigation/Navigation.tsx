@@ -44,13 +44,13 @@ const Navigation: React.FC = () => {
             </NavHeader>
             <motion.ul initial="closed" animate={show ? "open" : "closed"} variants={listVariants}>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">공지사항</NavLink>
+                    <NavLink href="#">부스 별 지도</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">공연 타임테이블</NavLink>
+                    <NavLink href="#">Special Guest</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
-                    <NavLink href="#">부스 정보</NavLink>
+                    <NavLink href="#">이벤트 일정</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
                     <NavLink href="#">만든이들</NavLink>
