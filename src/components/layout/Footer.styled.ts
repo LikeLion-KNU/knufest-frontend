@@ -11,7 +11,7 @@ export const TopBorder = styled.div`
     height: 1px;
     background-color: #d0d0d0;
     width: 70%;
-    margin: 0 auto 20px;
+    margin: 0 auto 50px;
 `;
 
 export const Logo = styled.img`
@@ -20,7 +20,7 @@ export const Logo = styled.img`
 `;
 
 export const EventName = styled.h3`
-    margin: 30px 0;
+    margin: 20px 0 10px 0;
 `;
 
 export const LegalLinks = styled.div``;
