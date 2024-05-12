@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 
+import CommentForm from "../forms/CommentForm";
 import Comment from "./Comment";
 import { CommentList, Title } from "./CommentInfo.styled";
+import Pagenation from "./Pagenation";
 
 type Comment = {
     name: string;
@@ -26,9 +28,14 @@ const CommentInfo: React.FC = () => {
             </Title>
             <CommentList>
                 {comments.map((comment, index) => (
-                    <Comment key={index} name={comment.name} time={comment.time} content={comment.content} />
+                    <div>
+                        <Comment key={index} name={comment.name} time={comment.time} content={comment.content} />
+                        <hr />
+                    </div>
                 ))}
             </CommentList>
+            <Pagenation />
+            <CommentForm />
         </>
     );
 };
