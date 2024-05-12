@@ -36,7 +36,7 @@ export const StyledImage = styled.div`
     }
 `;
 
-export const CountdownContainer = styled.div`
+export const ElementContainer = styled.div`
     width: 450px;
     margin: 2rem;
 
