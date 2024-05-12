@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fingerprintjs/fingerprintjs':
+    specifier: ^4.3.0
+    version: 4.3.0
   '@reduxjs/toolkit':
     specifier: ^2.2.4
     version: 2.2.4(react-redux@9.1.2)(react@18.3.1)
@@ -438,6 +441,12 @@ packages:
   /@eslint/js@8.57.0:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  /@fingerprintjs/fingerprintjs@4.3.0:
+    resolution: {integrity: sha512-eZYh6XVvMp5iyoT9y+/llGxqoACr01JeBTfy6NAMaQ6K2a3nZmyPKoYv5V89QNN8jUqzgXeTOICClEUtktLdtw==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -2044,7 +2053,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
