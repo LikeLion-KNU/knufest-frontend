@@ -3,7 +3,7 @@ import styled from "styled-components";
 export interface IText {
     size: "xs" | "s" | "m" | "l" | "xl" | string;
     weight: "bold" | "normal";
-    variant?: "darkpurple" | "purple" | "white" | "lightpurple";
+    variant?: "darkpurple" | "purple" | "white" | "lightpurple" | string;
 }
 
 export const Text = styled.span<IText>`
@@ -36,6 +36,8 @@ export const Text = styled.span<IText>`
                 return "#adabc3";
             case "white":
                 return "#ffffff";
+            default:
+                return props.variant;
         }
     }};
 `;
