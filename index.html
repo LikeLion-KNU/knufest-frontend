@@ -5,13 +5,15 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=<%= VITE_GOOGLE_ANALYTICS %>"></script>
-        <script>
+        <script type="module">
             window.dataLayer = window.dataLayer || [];
             function gtag() {
                 dataLayer.push(arguments);
             }
             gtag("js", new Date());
-            gtag("config", "%import.meta.env.VITE_GOOGLE_ANALYTICS%");
+
+            const GOOGLE_ANALYTICS = import.meta.env.VITE_GOOGLE_ANALYTICS;
+            gtag("config", GOOGLE_ANALYTICS);
         </script>
         <title>2024 경북대 대동제, 하푸르나</title>
     </head>
