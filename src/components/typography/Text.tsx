@@ -11,6 +11,8 @@ export const Text = styled.span<IText>`
 
     font-size: ${(props) => {
         switch (props.size) {
+            case "xxs":
+                return "12px";
             case "xs":
                 return "14px";
             case "s":
@@ -20,6 +22,8 @@ export const Text = styled.span<IText>`
             case "l":
                 return "22px";
             case "xl":
+                return "28px";
+            case "xxl":
                 return "40px";
             default:
                 return props.size;
