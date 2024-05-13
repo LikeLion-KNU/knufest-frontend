@@ -1,0 +1,81 @@
+[
+    {
+        "name": "김대건",
+        "dept": "컴퓨터학부 20",
+        "role": "멋쟁이사자처럼 12기 회장",
+        "photo": "daegun",
+        "description": ["지도 페이지 개발", "기여한 부분 2", "기여한 부분 3"],
+        "contact": {
+            "instagram": "toothless.kid"
+        },
+        "team": "Front-End"
+    },
+    {
+        "name": "이효은",
+        "dept": "컴퓨터학부 21",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "hyoeun",
+        "description": ["웹 페이지 디자인", "", "기여한 부분 3"],
+        "contact": {
+            "instagram": "hyon__er"
+        },
+        "team": "Front-End"
+    },
+    {
+        "name": "조동필",
+        "dept": "컴퓨터학부 19",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "dongpil",
+        "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
+        "contact": {
+            "instagram": "j0_dph"
+        },
+        "team": "Front-End"
+    },
+    {
+        "name": "채준혁",
+        "dept": "컴퓨터학부 21",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "junhyeok",
+        "description": ["메인 페이지 개발", "만든이들 페이지 개발 2", "웹 페이지 디자인"],
+        "contact": {
+            "instagram": "junyeokk_",
+            "linkedin": "junhyeokchae",
+            "github": "junyeokk"
+        },
+        "team": "Front-End"
+    },
+    {
+        "name": "이동건",
+        "dept": "컴퓨터학부 20",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "donggun",
+        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "contact": {
+            "instagram": "thismovinggun"
+        },
+        "team": "Back-End"
+    },
+    {
+        "name": "전지웅",
+        "dept": "컴퓨터학부 19",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "jiwoong",
+        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "contact": {
+            "instagram": "dnd._.hihi"
+        },
+        "team": "Back-End"
+    },
+    {
+        "name": "최정식",
+        "dept": "컴퓨터학부 21",
+        "role": "멋쟁이사자처럼 12기 운영진",
+        "photo": "jeongsik",
+        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "contact": {
+            "instagram": "siksik__choi"
+        },
+        "team": "Back-End"
+    }
+]
