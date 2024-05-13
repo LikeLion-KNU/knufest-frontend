@@ -9,7 +9,7 @@ import { PageContainer, MainContent, StyledImage, ElementContainer } from "@/pag
 
 import mainPageImage from "@/assets/main_page.jpg";
 
-const HomePage: React.FC = () => {
+export default function HomePage() {
     const quickAccessRef = useRef<HTMLDivElement>(null);
 
     const scrollToQuickAccess = () => {
@@ -46,6 +46,4 @@ const HomePage: React.FC = () => {
             </MainContent>
         </PageContainer>
     );
-};
-
-export default HomePage;
+}
