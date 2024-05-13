@@ -28,7 +28,7 @@ export const Countdown: React.FC<ICountdown> = ({ targetDate }) => {
             <Text size="l" weight="bold" variant="darkpurple">
                 축제까지 남은 시간
             </Text>
-            <Text size="xl" weight="bold" variant="lightpurple">
+            <Text size="xxl" weight="bold" variant="lightpurple">
                 {displayTime}
             </Text>
             <Text size="xs" weight="normal" variant="darkpurple">
