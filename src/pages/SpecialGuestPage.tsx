@@ -7,6 +7,7 @@ import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
 import tencmImg from "@/assets/10cm.jpg";
+import backImg from "@/assets/BackImg.png";
 import bigmamaImg from "@/assets/bigmama.webp";
 import hahaImg from "@/assets/haha.webp";
 import jannaviImg from "@/assets/jannavi.jpg";
@@ -15,7 +16,6 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 import soranbandImg from "@/assets/soranband.webp";
-import backImg from "@/assets/BackImg.png";
 
 import { MainContent, GuestCard, GuestContainer, Date, BackImg } from "./SpecialGuestPage.styled";
 
