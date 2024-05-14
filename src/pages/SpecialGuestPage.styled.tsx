@@ -5,15 +5,22 @@ export const MainContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-
+    margin-top: 20px;
+    position: relative;
     p {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
     }
 `;
+export const BackImg = styled.img`
+    position: absolute;
+    top:0;
+    z-index: -10;
+    width: 100%;
+`;
+
 export const GuestContainer = styled.div`
     width: 100%;
-    margin-top: 80px;
+    margin-top: 86px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -31,7 +38,7 @@ export const Date = styled.div`
 `;
 
 export const GuestCard = styled.div`
-    height: 360px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     gap: 25px;
