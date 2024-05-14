@@ -42,7 +42,7 @@ export default function ContributorPage() {
                     학생 분들의 편의를 위해 제작하게 되었습니다. <br />
                     <br />
                     이번 축제가 오랜만에 이루어지는 만큼 <br />
-                    더 즐겁고 행복한 축제가 되셨으면 좋겠습니다.
+                    더 즐겁고 행복한 시간이 되셨으면 좋겠습니다.
                     <br />
                 </Text>
             </TextContainer>
