@@ -2,6 +2,8 @@ import { Outlet, useLocation } from "react-router-dom";
 
 import styled from "styled-components";
 
+import { useScrollToTop } from "@/hooks/useScrollToTop";
+
 import Navigation from "../navigation/Navigation";
 import Footer from "./Footer";
 
@@ -14,6 +16,8 @@ export const Main = styled.main<{ isHomePage: boolean }>`
 export const MainLayout = () => {
     const location = useLocation();
     const isHomePage = location.pathname === "/"; // 메인 페이지(HomePage) padding 0px로 설정
+
+    useScrollToTop();
 
     return (
         <>
