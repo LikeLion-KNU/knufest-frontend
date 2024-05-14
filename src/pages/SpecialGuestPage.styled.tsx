@@ -12,11 +12,11 @@ export const MainContent = styled.div`
 `;
 export const GuestContainer = styled.div`
     width: 100%;
-    margin-top: 50px;
+    margin-top: 80px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 36px;
     p {
         text-shadow: none;
     }
@@ -35,7 +35,7 @@ export const GuestCard = styled.div`
     flex-direction: row;
     gap: 25px;
     padding: 0 50px;
-    margin-top: 10px;
+    margin-top: 44px;
     overflow: hidden;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
