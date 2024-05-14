@@ -6,6 +6,16 @@ import { ShowDate } from "@/components/display/ShowData";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
+import tencmImg from "@/assets/10cm.jpg";
+import bigmamaImg from "@/assets/bigmama.webp";
+import hahaImg from "@/assets/haha.webp";
+import jannaviImg from "@/assets/jannavi.jpg";
+import loykimImg from "@/assets/loykim.webp";
+import norazoImg from "@/assets/norazo.jpg";
+import paulblancoImg from "@/assets/paulblanco.avif";
+import qwerImg from "@/assets/qwer.webp";
+import soranbandImg from "@/assets/soranband.webp";
+
 import { MainContent, GuestCard, GuestContainer, Date } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
@@ -20,19 +30,19 @@ const SpecialGuestPage: React.FC = () => {
 
     const guestData: GuestData = {
         "5.21": [
-            { pic: "./src/assets/jannavi.jpg", name: "잔나비" },
-            { pic: "./src/assets/norazo.jpg", name: "노라조" },
-            { pic: "./src/assets/soranband.webp", name: "소란밴드" },
+            { pic: jannaviImg, name: "잔나비" },
+            { pic: norazoImg, name: "노라조" },
+            { pic: soranbandImg, name: "소란밴드" },
         ],
         "5.22": [
-            { pic: "./src/assets/qwer.webp", name: "QWER" },
-            { pic: "./src/assets/10cm.jpg", name: "10CM" },
-            { pic: "./src/assets/haha.webp", name: "하하" },
+            { pic: qwerImg, name: "QWER" },
+            { pic: tencmImg, name: "10CM" },
+            { pic: hahaImg, name: "하하" },
         ],
         "5.23": [
-            { pic: "./src/assets/paulblanco.avif", name: "Paul Balnco" },
-            { pic: "./src/assets/loykim.webp", name: "로이킴" },
-            { pic: "./src/assets/bigmama.webp", name: "빅마마" },
+            { pic: paulblancoImg, name: "Paul Balnco" },
+            { pic: loykimImg, name: "로이킴" },
+            { pic: bigmamaImg, name: "빅마마" },
         ],
     };
     const renderGuests = () => {
