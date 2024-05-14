@@ -8,14 +8,14 @@ interface IShowDate {
     onClick: () => void;
 }
 export const ShowDate: React.FC<IShowDate> = ({ date, day, active, onClick }) => {
-    const variant = active ? "#5D5A88" : "#adabc3";
+    const variant = active ? "#5D5A88" : "#fff";
     return (
         <ShowDateContainer>
             <ShowDateLink href="#" onClick={onClick}>
-                <Paragraph size="40px" weight="bold" variant={variant}>
+                <Paragraph size="24px" weight="bold" variant={variant}>
                     {date}
                 </Paragraph>
-                <Paragraph size="20px" weight="bold" variant={variant}>
+                <Paragraph size="xs" weight="bold" variant={variant}>
                     {day}
                 </Paragraph>
             </ShowDateLink>

@@ -11,7 +11,7 @@ export const Guest: React.FC<IGuest> = ({ name, pic }) => {
     return (
         <Card>
             <Picture src={pic} alt={name} />
-            <Text size="36px" weight="bold" variant="white">
+            <Text size="xl" weight="bold" variant="white">
                 {name}
             </Text>
         </Card>
