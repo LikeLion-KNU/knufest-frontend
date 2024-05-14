@@ -24,7 +24,4 @@ export const VisibleList = styled(motion.ul)`
     padding: 40px;
     width: 90%;
     list-style: none;
-
-    motion.IBooth {
-    }
 `;
