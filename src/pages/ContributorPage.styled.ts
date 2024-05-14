@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const DefaultGap = styled.div`
-    margin-top: 120px;
-`;
-
 export const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
