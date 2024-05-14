@@ -8,6 +8,7 @@ import Footer from "./Footer";
 export const Main = styled.main`
     width: min(100%, 700px);
     margin: 0px auto;
+    padding-top: 81px;
 `;
 
 export const MainLayout = () => {
