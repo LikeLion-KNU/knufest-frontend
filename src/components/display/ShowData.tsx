@@ -1,5 +1,5 @@
-import { ShowDateContainer, ShowDateLink} from "./ShowDate.styled";
 import { Paragraph } from "../typography/Paragraph";
+import { ShowDateContainer, ShowDateLink } from "./ShowDate.styled";
 
 interface IShowDate {
     date: string;
@@ -8,7 +8,7 @@ interface IShowDate {
     onClick: () => void;
 }
 export const ShowDate: React.FC<IShowDate> = ({ date, day, active, onClick }) => {
-    const variant = active ? "#5D5A88" : "#adabc3"
+    const variant = active ? "#5D5A88" : "#adabc3";
     return (
         <ShowDateContainer>
             <ShowDateLink href="#" onClick={onClick}>

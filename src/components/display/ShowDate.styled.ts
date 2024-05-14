@@ -12,5 +12,3 @@ export const ShowDateLink = styled.a`
         line-height: 22px;
     }
 `;
-
-
