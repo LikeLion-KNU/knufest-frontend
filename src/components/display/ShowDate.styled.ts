@@ -9,6 +9,6 @@ export const ShowDateLink = styled.a`
     text-align: center;
     p {
         margin: 0;
-        line-height: 22px;
+        line-height: 20px;
     }
 `;
