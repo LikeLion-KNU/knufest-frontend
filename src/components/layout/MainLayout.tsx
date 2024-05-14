@@ -1,21 +1,24 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import styled from "styled-components";
 
 import Navigation from "../navigation/Navigation";
 import Footer from "./Footer";
 
-export const Main = styled.main`
+export const Main = styled.main<{ isHomePage: boolean }>`
     width: min(100%, 700px);
     margin: 0px auto;
-    padding-top: 81px;
+    padding-top: ${({ isHomePage }) => (isHomePage ? "0px" : "81px")};
 `;
 
 export const MainLayout = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === "/"; // 메인 페이지(HomePage) padding 0px로 설정
+
     return (
         <>
             <Navigation />
-            <Main>
+            <Main isHomePage={isHomePage}>
                 <Outlet />
             </Main>
             <Footer />

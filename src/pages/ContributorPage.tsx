@@ -11,7 +11,7 @@ import junhyeok from "@/assets/junhyeok.png";
 import contributors from "@/constants/contributors.json";
 
 import Card from "../components/display/Card";
-import { DefaultGap, TextContainer, PositionContainer, PositionTextWrapper } from "./ContributorPage.styled";
+import { TextContainer, PositionContainer, PositionTextWrapper } from "./ContributorPage.styled";
 
 const imageMap: { [key: string]: string } = {
     daegun,
@@ -32,8 +32,6 @@ export default function ContributorPage() {
 
     return (
         <>
-            <DefaultGap />
-
             <TextContainer>
                 <Text size="xl" weight="bold" variant="darkpurple">
                     만든이들
