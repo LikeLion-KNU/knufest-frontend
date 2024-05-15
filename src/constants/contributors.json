@@ -15,7 +15,7 @@
         "dept": "컴퓨터학부 21",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "hyoeun",
-        "description": ["웹 페이지 디자인", "", "기여한 부분 3"],
+        "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
             "instagram": "hyon__er"
         },
@@ -69,7 +69,7 @@
     },
     {
         "name": "최정식",
-        "dept": "컴퓨터학부 21",
+        "dept": "컴퓨터학부 20",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "jeongsik",
         "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
