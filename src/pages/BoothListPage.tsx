@@ -3,8 +3,9 @@ import React from "react";
 import { Variants } from "framer-motion";
 
 import { Booth } from "@/components/display/Booth";
+import { Map } from "@/components/map/Map";
 
-import { useVisitor } from "@/hooks/useVisitor";
+import { useBooth } from "@/hooks/useBooth";
 
 // import Map from "./Map";
 import { PageContainer, MainContent, VisibleList } from "./BoothListPage.styled";
@@ -23,22 +24,26 @@ const listVariants: Variants = {
 };
 
 const BoothListPage: React.FC = () => {
-    const lists = ["컴퓨터학부 주점이름", "전자 주점이름", "토목 주점이름", "기계 주점이름", "식품공학부 주점이름"];
-    const heart = 356;
-    //list랑 index, heart는 받아온 값으로 수정
+    const { visibleBooth } = useBooth();
 
-    const { visitorId } = useVisitor();
+    /**
+     *  a: 기타
+     *  b: 복합
+     *  c: 주막
+     */
 
     return (
         <PageContainer>
             <MainContent>
-                {/*<Map />*/}
+                <div id="map-container" style={{ width: "100%", height: "200px", overflow: "scroll" }}>
+                    <Map />
+                </div>
+
                 <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                    {lists.map((name, index) => {
-                        return <Booth index={index} name={name} heart={heart} />;
+                    {visibleBooth?.map((booth, index) => {
+                        return <Booth index={index} name={booth} heart={0} />;
                     })}
                 </VisibleList>
-                <p>{visitorId}</p>
             </MainContent>
         </PageContainer>
     );
