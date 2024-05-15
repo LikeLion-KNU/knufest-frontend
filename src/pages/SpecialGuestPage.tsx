@@ -10,7 +10,7 @@ import tencmImg from "@/assets/10cm.jpg";
 import backImg from "@/assets/BackImg.png";
 import hahaImg from "@/assets/haha.webp";
 import jannaviImg from "@/assets/jannavi.jpg";
-import leesangmi from "@/assets/leesangmi.webp";
+import leesangmi from "@/assets/leesangmi.jpg";
 import leeyeonghyun from "@/assets/leeyeonghyun.webp";
 import loykimImg from "@/assets/loykim.webp";
 import norazoImg from "@/assets/norazo.jpg";
