@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
+import { Pagination } from "@/components/navigation/Pagination";
+
 import CommentForm from "../forms/CommentForm";
 import Comment from "./Comment";
 import { CommentList, Title } from "./CommentInfo.styled";
-import Pagenation from "./Pagenation";
 
 type Comment = {
     name: string;
@@ -34,7 +35,7 @@ const CommentInfo: React.FC = () => {
                     </div>
                 ))}
             </CommentList>
-            <Pagenation />
+            <Pagination />
             <hr />
             <CommentForm />
         </>
