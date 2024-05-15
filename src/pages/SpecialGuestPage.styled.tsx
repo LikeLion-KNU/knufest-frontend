@@ -14,7 +14,7 @@ export const MainContent = styled.div`
 `;
 export const BackImg = styled.img`
     position: absolute;
-    top: 0;
+    top: -30px;
     z-index: -10;
     width: 100%;
 `;
