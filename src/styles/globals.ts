@@ -5,7 +5,12 @@ export const GlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "MesloLGS NF Bold";
-    src: url("./assets/MesloLGS-NF-Bold.ttf") format("truetype");
+    src: url("src/assets/MesloLGS-NF-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Blinker SemiBold";
+    src: url("src/assets/Blinker-SemiBold.ttf") format("truetype");
   }
 
   body {

@@ -8,7 +8,8 @@ export const MainContent = styled.div`
     margin-top: 20px;
     position: relative;
     p {
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 25%);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
+        font-family: "Blinker SemiBold", monospace;
     }
 `;
 export const BackImg = styled.img`
