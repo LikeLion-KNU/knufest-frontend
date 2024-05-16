@@ -2,14 +2,14 @@ import { TiHeartFullOutline } from "react-icons/ti";
 
 import { HeartWrapper } from "./Heart.styled";
 
-export interface IHeart {
+export interface IHeart extends React.ComponentProps<"div"> {
     num: number;
     likable: boolean;
 }
 
-export const Heart: React.FC<IHeart> = ({ num, likable }) => {
+export const Heart: React.FC<IHeart> = ({ num, likable, ...rest }) => {
     return (
-        <HeartWrapper likable={likable}>
+        <HeartWrapper likeable={likable} {...rest}>
             <TiHeartFullOutline size={24} />
             {num}
         </HeartWrapper>

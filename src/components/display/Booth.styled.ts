@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const BoothListItem = styled(motion.li)`
+    display: flex;
+    align-items: center;
+
     height: 70px;
     padding: 0px 25px;
     margin: 12px 0;
