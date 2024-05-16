@@ -52,7 +52,7 @@ const SpecialGuestPage: React.FC = () => {
 
     return (
         <>
-            <Paragraph size="xl" weight="bold" variant="darkpurple">
+            <Paragraph size="xl" weight="bold" variant="darkpurple" isTitle>
                 SPECIAL GUEST
             </Paragraph>
             <BackImg src={backImg} alt="background" />

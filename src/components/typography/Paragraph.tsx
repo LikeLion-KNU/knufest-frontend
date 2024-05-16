@@ -1,15 +1,23 @@
+import styled from "styled-components";
+
 import { IText, Text } from "./Text";
 
 export interface IParagraph extends IText {
     children: React.ReactNode;
+    isTitle?: boolean;
 }
 
-export const Paragraph: React.FC<IParagraph> = ({ size, weight, variant, children }) => {
+const ParagraphStyled = styled.p<{ isTitle?: boolean }>`
+    text-shadow: ${({ isTitle }) => (isTitle ? "0px 4px 4px rgba(0, 0, 0, 0.25)" : "none")};
+    font-family: ${({ isTitle }) => (isTitle ? "Blinker SemiBold" : "Pretendard")}, sans-serif;
+`;
+
+export const Paragraph: React.FC<IParagraph> = ({ size, weight, variant, children, isTitle }) => {
     return (
-        <p>
+        <ParagraphStyled isTitle={isTitle}>
             <Text size={size} weight={weight} variant={variant}>
                 {children}
             </Text>
-        </p>
+        </ParagraphStyled>
     );
 };
