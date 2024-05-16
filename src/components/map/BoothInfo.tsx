@@ -1,0 +1,557 @@
+import { memo } from "react";
+
+export const BoothInfo = memo(() => {
+    return (
+        <>
+            <rect
+                id="a-1"
+                x={426}
+                y={369.069}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 426 369.069)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-11"
+                x={473.219}
+                y={356.443}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 473.219 356.443)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-8"
+                x={522.437}
+                y={343.818}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 522.437 343.818)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-6"
+                x={571.656}
+                y={330.192}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 571.656 330.192)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-7"
+                x={622}
+                y={316.713}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 622 316.713)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-10"
+                x={672.093}
+                y={303.941}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 672.093 303.941)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-4"
+                x={459}
+                y={395.002}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 459 395.002)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-9"
+                x={508.222}
+                y={382.388}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 508.222 382.388)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-3"
+                x={557.444}
+                y={368.775}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 557.444 368.775)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-5"
+                x={606.666}
+                y={356.162}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 606.666 356.162)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-2"
+                x={656.887}
+                y={342.548}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 656.887 342.548)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="a-12"
+                x={705.109}
+                y={329.935}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8836 705.109 329.935)"
+                fill="#6273AD"
+            />
+            <rect
+                className="booth-info"
+                id="b-2"
+                x={726}
+                y={288.713}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 726 288.713)"
+                fill="#66A382"
+            />
+            <rect
+                className="booth-info"
+                id="b-1"
+                x={765}
+                y={277.713}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(-14.8972 765 277.713)"
+                fill="#66A382"
+            />
+            <rect
+                className="booth-info"
+                id="c-12"
+                x={861.782}
+                y={233.032}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 861.782 233.032)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-29"
+                x={910.782}
+                y={240.032}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 910.782 240.032)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-5"
+                x={959.782}
+                y={247.032}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 959.782 247.032)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-32"
+                x={1008.32}
+                y={253.525}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1008.32 253.525)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-18"
+                x={1057.38}
+                y={261.511}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1057.38 261.511)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-7"
+                x={1105.99}
+                y={267.991}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1105.99 267.991)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-20"
+                x={1154.12}
+                y={274.964}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1154.12 274.964)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-2"
+                x={1202.8}
+                y={282.429}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1202.8 282.429)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-25"
+                x={1250.66}
+                y={289.457}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1250.66 289.457)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-16"
+                x={1299.19}
+                y={295.95}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1299.19 295.95)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-28"
+                x={1348.26}
+                y={302.936}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1348.26 302.936)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-9"
+                x={1396.86}
+                y={309.416}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1396.86 309.416)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-14"
+                x={1446}
+                y={316.388}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1446 316.388)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-4"
+                x={1494.67}
+                y={322.854}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1494.67 322.854)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-22"
+                x={1543.67}
+                y={329.854}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1543.67 329.854)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-27"
+                x={1592.67}
+                y={336.854}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(8 1592.67 336.854)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-30"
+                x={1684.94}
+                y={358}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1684.94 358)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-10"
+                x={1725.16}
+                y={386.183}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1725.16 386.183)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-3"
+                x={1766.08}
+                y={414.147}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1766.08 414.147)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-19"
+                x={1806.37}
+                y={442.347}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1806.37 442.347)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-30"
+                x={1847.36}
+                y={471.33}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1847.36 471.33)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-11"
+                x={1888.15}
+                y={498.651}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1888.15 498.651)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-21"
+                x={1928.56}
+                y={526.494}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1928.56 526.494)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-8"
+                x={1969.42}
+                y={554.44}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(34.3869 1969.42 554.44)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-35"
+                x={2177.27}
+                y={487.029}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2177.27 487.029)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-26"
+                x={2215.7}
+                y={516.306}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2215.7 516.306)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-15"
+                x={2255.84}
+                y={545.384}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2255.84 545.384)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-13"
+                x={2295.33}
+                y={574.681}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2295.33 574.681)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-6"
+                x={2335.53}
+                y={603.779}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2335.53 603.779)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-23"
+                x={2375.56}
+                y={632.212}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2375.56 632.212)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-33"
+                x={2416.17}
+                y={662.154}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2416.17 662.154)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-17"
+                x={2455.24}
+                y={690.212}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2455.24 690.212)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-1"
+                x={2127.44}
+                y={552.064}
+                width={229.127}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2127.44 552.064)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-31"
+                x={2328.62}
+                y={699}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2328.62 699)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-24"
+                x={2368.22}
+                y={728.942}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2368.22 728.942)"
+                fill="#9874FF"
+            />
+            <rect
+                className="booth-info"
+                id="c-34"
+                x={2408.29}
+                y={758}
+                width={30}
+                height={30}
+                rx={8}
+                transform="rotate(35.9615 2408.29 758)"
+                fill="#9874FF"
+            />
+        </>
+    );
+});

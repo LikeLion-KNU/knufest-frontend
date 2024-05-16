@@ -1,37 +1,44 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const BoothList = styled(motion.li)`
-    height: 40px;
-    padding: 20px 25px;
+export const BoothListItem = styled(motion.li)`
+    height: 70px;
+    padding: 0px 25px;
     margin: 12px 0;
     border-radius: 25px;
     background-color: #e9e9fb;
-    align-content: center;
 `;
 
 export const BoothLink = styled.a`
-    position: relative;
-    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
+    text-decoration: none;
+
     span {
-        position: absolute;
-        left: 50px;
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+
+        padding-left: 20px;
     }
 `;
 
 export const Index = styled.div`
-    position: absolute;
-    left: 0;
+    flex-shrink: 0;
+
     width: 30px;
     height: 30px;
     border-radius: 10px;
-    align-content: center;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     color: #fff;
     background-color: #9874ff;

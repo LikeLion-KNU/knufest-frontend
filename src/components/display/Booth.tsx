@@ -2,7 +2,7 @@ import { Variants } from "framer-motion";
 
 import { Text } from "@/components/typography/Text";
 
-import { BoothList, BoothLink, Index } from "./Booth.styled";
+import { BoothLink, Index, BoothListItem } from "./Booth.styled";
 import { Heart } from "./Heart";
 
 interface IBooth {
@@ -18,7 +18,7 @@ const itemVariants: Variants = {
 
 export const Booth: React.FC<IBooth> = ({ index, name, num, likable }) => {
     return (
-        <BoothList variants={itemVariants}>
+        <BoothListItem variants={itemVariants}>
             <BoothLink href={`booth/${index + 1}`}>
                 <Index>{index + 1}</Index>
                 <Text size="m" weight="bold" variant="#5D5A88">
@@ -26,6 +26,6 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likable }) => {
                 </Text>
                 <Heart num={num} likable={likable} />
             </BoothLink>
-        </BoothList>
+        </BoothListItem>
     );
 };

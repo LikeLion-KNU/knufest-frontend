@@ -4,13 +4,13 @@ import { Route, Routes } from "react-router-dom";
 
 import { MainLayout } from "@/components/layout/MainLayout";
 
+import BoothDetailPage from "@/pages/BoothDetailPage";
+import BoothListPage from "@/pages/BoothListPage";
+import ContributorPage from "@/pages/ContributorPage";
 import HomePage from "@/pages/HomePage";
+import SpecialGuestPage from "@/pages/SpecialGuestPage";
+import TimeTablePage from "@/pages/TimeTablePage";
 
-import BoothDetailPage from "./pages/BoothDetailPage";
-import BoothListPage from "./pages/BoothListPage";
-import ContributorPage from "./pages/ContributorPage";
-import SpecialGuestPage from "./pages/SpecialGuestPage";
-import TimeTablePage from "./pages/TimeTablePage";
 import { GlobalStyle } from "./styles/globals";
 import { store } from "@/store/store";
 
