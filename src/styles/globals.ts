@@ -18,4 +18,23 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Pretendard', sans-serif;
   }
+
+  #map{
+    /* width: 100%; */
+    width: auto;
+    aspect-ratio: 4/3;
+  }
+
+  #map-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
+    border: 1px solid black;
+
+    svg{
+
+    }
+  }
 `;
