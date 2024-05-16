@@ -17,7 +17,7 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 
-import { MainContent, GuestCard, GuestContainer, Date, BackImg } from "./SpecialGuestPage.styled";
+import { GuestCard, GuestContainer, Date, BackImg } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
@@ -51,7 +51,7 @@ const SpecialGuestPage: React.FC = () => {
     };
 
     return (
-        <MainContent>
+        <>
             <Paragraph size="xl" weight="bold" variant="darkpurple">
                 SPECIAL GUEST
             </Paragraph>
@@ -85,7 +85,7 @@ const SpecialGuestPage: React.FC = () => {
                 </div>
                 <GuestCard>{renderGuests()}</GuestCard>
             </GuestContainer>
-        </MainContent>
+        </>
     );
 };
 export default SpecialGuestPage;

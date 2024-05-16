@@ -30,17 +30,15 @@ const BoothListPage: React.FC = () => {
     const { visitorId } = useVisitor();
 
     return (
-        <PageContainer>
-            <MainContent>
-                {/*<Map />*/}
-                <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                    {lists.map((name, index) => {
-                        return <Booth index={index} name={name} heart={heart} />;
-                    })}
-                </VisibleList>
-                <p>{visitorId}</p>
-            </MainContent>
-        </PageContainer>
+        <>
+            {/*<Map />*/}
+            <VisibleList variants={listVariants} initial="hidden" animate="visible">
+                {lists.map((name, index) => {
+                    return <Booth index={index} name={name} heart={heart} />;
+                })}
+            </VisibleList>
+            <p>{visitorId}</p>
+        </>
     );
 };
 export default BoothListPage;

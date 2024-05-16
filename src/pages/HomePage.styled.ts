@@ -1,23 +1,5 @@
 import styled from "styled-components";
 
-export const PageContainer = styled.div`
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-`;
-
-export const MainContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-`;
-
 export const StyledImage = styled.div`
     position: relative;
     width: 100%;

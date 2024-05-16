@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const MainContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    position: relative;
-    p {
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
-        font-family: "Blinker SemiBold", monospace;
-    }
-`;
 export const BackImg = styled.img`
     position: absolute;
     top: -30px;
