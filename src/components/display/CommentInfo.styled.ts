@@ -24,5 +24,4 @@ export const CommentList = styled.div`
     }
 `;
 
-export const CommentContainer = styled.div`
-`;
+export const CommentContainer = styled.div``;

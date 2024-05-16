@@ -29,7 +29,7 @@ export const ContentContainer = styled.form`
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    border: 1px solid #3F3A6C;
+    border: 1px solid #3f3a6c;
     border-radius: 30px;
 
     textarea {
@@ -44,14 +44,14 @@ export const ContentContainer = styled.form`
         align-content: center;
         resize: none;
         -ms-overflow-style: none;
-        &::-webkit-scrollbar{
-            display:none;
+        &::-webkit-scrollbar {
+            display: none;
         }
         &:focus {
             outline: none;
         }
-        &::placeholder { 
-            color:  #5d5a88;
+        &::placeholder {
+            color: #5d5a88;
         }
     }
 `;
@@ -61,7 +61,7 @@ export const SubBtn = styled.button`
     width: 30px;
     height: 30px;
     border: none;
-    background-color: #E7E6F2;
+    background-color: #e7e6f2;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,4 @@ export const SubBtn = styled.button`
     right: 10px;
 `;
 
-export const SendImg = styled.img`
-    
-`;
+export const SendImg = styled.img``;

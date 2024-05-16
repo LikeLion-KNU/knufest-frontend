@@ -9,7 +9,7 @@ export interface IHeart {
 
 export const Heart: React.FC<IHeart> = ({ num, likable }) => {
     return (
-        <HeartWrapper likable={likable} >
+        <HeartWrapper likable={likable}>
             <TiHeartFullOutline size={24} />
             {num}
         </HeartWrapper>

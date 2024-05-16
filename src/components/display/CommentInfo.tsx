@@ -2,16 +2,16 @@ import React, { useState } from "react";
 
 import { Pagination } from "@/components/navigation/Pagination";
 
+import { Text } from "../typography/Text";
 import Comment from "./Comment";
 import { CommentList, CommentWrapper, CommentContainer, Title } from "./CommentInfo.styled";
-import { Text } from "../typography/Text";
 
 export interface IComment {
     name: string;
     time: string;
     content: string;
     deletable: boolean;
-};
+}
 
 const CommentInfo: React.FC = () => {
     const [commentnum] = useState<number>(221);
@@ -36,7 +36,13 @@ const CommentInfo: React.FC = () => {
                 {comments.map((comment, index) => (
                     <div>
                         <CommentContainer>
-                            <Comment key={index} name={comment.name} time={comment.time} content={comment.content} deletable={comment.deletable} />
+                            <Comment
+                                key={index}
+                                name={comment.name}
+                                time={comment.time}
+                                content={comment.content}
+                                deletable={comment.deletable}
+                            />
                         </CommentContainer>
                         <hr />
                     </div>

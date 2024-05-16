@@ -11,7 +11,6 @@ export const CommentContent = styled.div`
     }
 `;
 
-
 export const CommentInfoWrapper = styled.div`
     display: flex;
     gap: 8px;

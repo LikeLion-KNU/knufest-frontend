@@ -36,4 +36,3 @@ export const Index = styled.div`
     color: #fff;
     background-color: #9874ff;
 `;
-

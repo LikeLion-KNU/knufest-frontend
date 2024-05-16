@@ -23,7 +23,7 @@ export const InfoWrapper = styled.div`
 `;
 
 export const BoothName = styled.div`
-    background-color: #E7E6F2;
+    background-color: #e7e6f2;
     border-radius: 20px;
     padding: 15px 20px;
     display: flex;

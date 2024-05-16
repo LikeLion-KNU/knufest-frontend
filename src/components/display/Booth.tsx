@@ -19,12 +19,12 @@ const itemVariants: Variants = {
 export const Booth: React.FC<IBooth> = ({ index, name, num, likable }) => {
     return (
         <BoothList variants={itemVariants}>
-            <BoothLink href={`booth/${index+1}`}>
+            <BoothLink href={`booth/${index + 1}`}>
                 <Index>{index + 1}</Index>
                 <Text size="m" weight="bold" variant="#5D5A88">
                     {name}
                 </Text>
-                <Heart num={num} likable={likable}/>
+                <Heart num={num} likable={likable} />
             </BoothLink>
         </BoothList>
     );
