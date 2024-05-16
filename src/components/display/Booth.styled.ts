@@ -43,21 +43,3 @@ export const Index = styled.div`
     color: #fff;
     background-color: #9874ff;
 `;
-
-export const Heart = styled.div`
-    flex-shrink: 0;
-
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    font-size: 12px;
-    line-height: 8px;
-    color: #9874ff;
-`;

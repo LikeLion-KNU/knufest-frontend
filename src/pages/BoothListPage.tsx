@@ -26,6 +26,12 @@ const BoothListPage: React.FC = () => {
      *  b: 복합
      *  c: 주막
      */
+    const lists = ["컴퓨터학부 주점이름", "전자 주점이름", "토목 주점이름", "기계 주점이름", "식품공학부 주점이름"];
+    const num = 356;
+    //list랑 index, heart는 받아온 값으로 수정
+
+    const { visitorId } = useVisitor();
+
     return (
         <PageContainer>
             <MainContent>
@@ -40,9 +46,9 @@ const BoothListPage: React.FC = () => {
                 </TransformWrapper>
 
                 <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                    {/* {visibleBooth?.map((booth, index) => {
-                        return <Booth index={index} name={booth} heart={0} />;
-                    })} */}
+                    {lists.map((name, index) => {
+                        return <Booth index={index} name={name} num={num} likable={true} />;
+                    })}
                 </VisibleList>
             </MainContent>
         </PageContainer>
