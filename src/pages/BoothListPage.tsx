@@ -3,8 +3,10 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
 import { Variants } from "framer-motion";
 
+import { Booth } from "@/components/display/Booth";
 import { Map } from "@/components/map/Map";
 
+// import { useVisitor } from "@/hooks/useVisitor";
 import { PageContainer, MainContent, VisibleList } from "./BoothListPage.styled";
 
 const listVariants: Variants = {
@@ -30,7 +32,7 @@ const BoothListPage: React.FC = () => {
     const num = 356;
     //list랑 index, heart는 받아온 값으로 수정
 
-    const { visitorId } = useVisitor();
+    // const { visitorId } = useVisitor();
 
     return (
         <PageContainer>

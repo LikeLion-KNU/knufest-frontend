@@ -4,8 +4,6 @@ interface IHeart {
     likable: boolean;
 }
 export const HeartWrapper = styled.div<IHeart>`
-    position: absolute;
-    right: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
