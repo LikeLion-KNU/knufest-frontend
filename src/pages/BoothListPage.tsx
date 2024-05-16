@@ -1,13 +1,10 @@
 import React from "react";
+import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
 import { Variants } from "framer-motion";
 
-import { Booth } from "@/components/display/Booth";
 import { Map } from "@/components/map/Map";
 
-import { useBooth } from "@/hooks/useBooth";
-
-// import Map from "./Map";
 import { PageContainer, MainContent, VisibleList } from "./BoothListPage.styled";
 
 const listVariants: Variants = {
@@ -24,25 +21,28 @@ const listVariants: Variants = {
 };
 
 const BoothListPage: React.FC = () => {
-    const { visibleBooth } = useBooth();
-
     /**
      *  a: 기타
      *  b: 복합
      *  c: 주막
      */
-
     return (
         <PageContainer>
             <MainContent>
-                <div id="map-container" style={{ width: "100%", height: "200px", overflow: "scroll" }}>
-                    <Map />
-                </div>
+                <TransformWrapper initialScale={0.5} minScale={0.5}>
+                    <TransformComponent
+                        wrapperClass="map-wrapper"
+                        contentClass="map"
+                        wrapperStyle={{ width: "100%", aspectRatio: "4/3" }}
+                    >
+                        <Map />
+                    </TransformComponent>
+                </TransformWrapper>
 
                 <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                    {visibleBooth?.map((booth, index) => {
+                    {/* {visibleBooth?.map((booth, index) => {
                         return <Booth index={index} name={booth} heart={0} />;
-                    })}
+                    })} */}
                 </VisibleList>
             </MainContent>
         </PageContainer>
