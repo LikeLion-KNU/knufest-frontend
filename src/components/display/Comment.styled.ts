@@ -1,7 +1,19 @@
 import styled from "styled-components";
 
-export const CommentTitle = styled.div``;
+export const CommentContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
-export const CommentContent = styled.div``;
+    p {
+        display: flex;
+    }
+`;
 
-export type CommentType = [string, string, string];
+
+export const CommentInfoWrapper = styled.div`
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+`;
