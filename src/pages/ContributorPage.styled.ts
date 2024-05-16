@@ -5,7 +5,6 @@ export const TextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
     text-align: center;
     line-height: 1.5;
 
