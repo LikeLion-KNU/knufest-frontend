@@ -4,6 +4,8 @@ interface IHeart {
     likeable: boolean;
 }
 export const HeartWrapper = styled.div<IHeart>`
+    flex-shrink: 0;
+
     width: 40px;
     height: 40px;
     border-radius: 50%;
