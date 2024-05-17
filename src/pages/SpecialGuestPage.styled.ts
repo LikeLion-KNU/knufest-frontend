@@ -18,13 +18,6 @@ export const GuestContainer = styled.div`
         text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
     }
 `;
-export const Date = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 33px;
-`;
 
 export const GuestCard = styled.div`
     height: 300px;
