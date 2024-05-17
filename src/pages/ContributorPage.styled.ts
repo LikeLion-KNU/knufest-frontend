@@ -19,6 +19,7 @@ export const PositionContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+    width: 100%;
 `;
 
 export const PositionTextWrapper = styled.div`
