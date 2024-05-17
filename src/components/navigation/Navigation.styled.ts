@@ -40,7 +40,7 @@ export const NavHeader = styled.div`
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
-    height: 60px;
+    height: 45px;
     gap: 100px;
 `;
 
