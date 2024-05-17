@@ -6,7 +6,8 @@
         "photo": "daegun",
         "description": ["지도 페이지 개발", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "toothless.kid"
+            "instagram": "toothless.kid",
+            "github": "toothlessdev"
         },
         "team": "Front-End"
     },
@@ -17,7 +18,8 @@
         "photo": "hyoeun",
         "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "hyon__er"
+            "instagram": "hyon__er",
+            "github": "Hyoeunkh"
         },
         "team": "Front-End"
     },
@@ -28,7 +30,8 @@
         "photo": "dongpil",
         "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "j0_dph"
+            "instagram": "j0_dph",
+            "github": "eastfilmm"
         },
         "team": "Front-End"
     },
@@ -52,7 +55,8 @@
         "photo": "donggun",
         "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "thismovinggun"
+            "instagram": "thismovinggun",
+            "github": "himodu"
         },
         "team": "Back-End"
     },
@@ -63,7 +67,8 @@
         "photo": "jiwoong",
         "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "dnd._.hihi"
+            "instagram": "dnd._.hihi",
+            "github": "wldnd2"
         },
         "team": "Back-End"
     },
@@ -74,7 +79,8 @@
         "photo": "jeongsik",
         "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
         "contact": {
-            "instagram": "siksik__choi"
+            "instagram": "siksik__choi",
+            "github": "siksik-Choi"
         },
         "team": "Back-End"
     }
