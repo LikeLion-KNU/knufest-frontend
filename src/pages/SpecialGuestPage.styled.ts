@@ -15,7 +15,7 @@ export const GuestContainer = styled.div`
     flex-direction: column;
     gap: 36px;
     p {
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
 `;
 
