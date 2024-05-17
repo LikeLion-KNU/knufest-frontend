@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import { BiSolidMap } from "react-icons/bi";
 
 import DateSelector from "@/components/display/DateSelector";
@@ -12,7 +13,7 @@ import timetableDataJson from "@/constants/timetable.json";
 
 import { handleDateClick, getTimetableData, TimetableData } from "@/utils/timetableUtils";
 
-import { BackImg, DateWrapper, LocationWrapper, LocationButton } from "./TimeTablePage.styled";
+import { BackImg, DateWrapper, LocationWrapper, LocationButton, ScrollTopButton } from "./TimeTablePage.styled";
 
 const TimeTablePage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
@@ -36,6 +37,13 @@ const TimeTablePage: React.FC = () => {
                 behavior: "smooth",
             });
         }
+    };
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
     };
 
     return (
@@ -80,6 +88,9 @@ const TimeTablePage: React.FC = () => {
                 data={getTimetableData(timetableData)(activeDate, "대운동장")}
                 locationRef={locationRefs["대운동장"]}
             />
+            <ScrollTopButton onClick={handleScrollToTop}>
+                <AiOutlineArrowUp size={24} />
+            </ScrollTopButton>
         </>
     );
 };

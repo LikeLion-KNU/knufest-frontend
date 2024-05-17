@@ -43,3 +43,18 @@ export const TimeTableSection = styled.div`
     padding: 20px;
     width: 80%;
 `;
+
+export const ScrollTopButton = styled.button`
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #5d5a88;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
