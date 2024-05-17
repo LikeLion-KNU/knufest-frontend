@@ -8,8 +8,8 @@ export interface IParagraph extends IText {
 }
 
 const ParagraphStyled = styled.p<{ isTitle?: boolean }>`
-    text-shadow: ${({ isTitle }) => (isTitle ? "0px 4px 4px rgba(0, 0, 0, 0.25)" : "none")};
-    font-family: ${({ isTitle }) => (isTitle ? "Blinker SemiBold" : "Pretendard")}, sans-serif;
+    text-shadow: ${({ isTitle }) => (isTitle ? "0px 4px 4px rgba(0, 0, 0, 0.1)" : "none")};
+    font-family: ${({ isTitle }) => (isTitle ? "Blinker SemiBold" : "Pretendard")};
 `;
 
 export const Paragraph: React.FC<IParagraph> = ({ size, weight, variant, children, isTitle }) => {
