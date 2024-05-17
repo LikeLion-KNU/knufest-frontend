@@ -5,18 +5,18 @@ export const GlobalStyle = createGlobalStyle`
   
   @font-face {
     font-family: "MesloLGS NF Bold";
-    src: url("/src/assets/MesloLGS-NF-Bold.ttf") format("truetype");
+    src: url("fonts/MesloLGS-NF-Bold.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "Blinker SemiBold";
-    src: url("/src/assets/Blinker-SemiBold.ttf") format("truetype");
+    src: url("fonts/Blinker-SemiBold.ttf") format("truetype");
   }
 
 
   @font-face {
     font-family: "DM Sans";
-    src: url("/src/assets/DMSans-Medium.ttf") format("truetype");
+    src: url("fonts/DMSans-Medium.ttf") format("truetype");
   }
 
   body {
