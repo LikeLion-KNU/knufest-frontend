@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BiSolidMap } from "react-icons/bi";
 
+import DateSelector from "@/components/display/DateSelector";
 import { Guest } from "@/components/display/Guest";
-import { ShowDate } from "@/components/display/ShowData";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
@@ -17,7 +17,7 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 
-import { MainContent, GuestCard, GuestContainer, Date, BackImg } from "./SpecialGuestPage.styled";
+import { GuestCard, GuestContainer, BackImg } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
@@ -51,32 +51,21 @@ const SpecialGuestPage: React.FC = () => {
     };
 
     return (
-        <MainContent>
-            <Paragraph size="xl" weight="bold" variant="darkpurple">
+        <>
+            <Paragraph size="xl" weight="bold" variant="darkpurple" isTitle>
                 SPECIAL GUEST
             </Paragraph>
             <BackImg src={backImg} alt="background" />
             <GuestContainer>
-                <Date>
-                    <ShowDate
-                        date="5.21"
-                        day="TUE"
-                        active={activeDate === "5.21"}
-                        onClick={() => handleDateClick("5.21")}
-                    />
-                    <ShowDate
-                        date="5.22"
-                        day="WED"
-                        active={activeDate === "5.22"}
-                        onClick={() => handleDateClick("5.22")}
-                    />
-                    <ShowDate
-                        date="5.23"
-                        day="THU"
-                        active={activeDate === "5.23"}
-                        onClick={() => handleDateClick("5.23")}
-                    />
-                </Date>
+                <DateSelector
+                    activeDate={activeDate}
+                    onDateClick={handleDateClick}
+                    dates={[
+                        { date: "5.21", day: "TUE" },
+                        { date: "5.22", day: "WED" },
+                        { date: "5.23", day: "THU" },
+                    ]}
+                />
                 <div>
                     <BiSolidMap size={18} color="#5d5a88" />
                     <Text size="m" weight="bold" variant="darkpurple">
@@ -85,7 +74,7 @@ const SpecialGuestPage: React.FC = () => {
                 </div>
                 <GuestCard>{renderGuests()}</GuestCard>
             </GuestContainer>
-        </MainContent>
+        </>
     );
 };
 export default SpecialGuestPage;

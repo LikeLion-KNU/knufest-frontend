@@ -6,11 +6,12 @@ import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 import Navigation from "../navigation/Navigation";
 import Footer from "./Footer";
+import { MainContent } from "./MainContent";
 
 export const Main = styled.main<{ isHomePage: boolean }>`
     width: min(100%, 700px);
     margin: 0px auto;
-    padding-top: ${({ isHomePage }) => (isHomePage ? "0px" : "81px")};
+    padding-top: ${({ isHomePage }) => (isHomePage ? "0px" : "66px")};
 `;
 
 export const MainLayout = () => {
@@ -23,7 +24,9 @@ export const MainLayout = () => {
         <>
             <Navigation />
             <Main isHomePage={isHomePage}>
-                <Outlet />
+                <MainContent isHomePage={isHomePage}>
+                    <Outlet />
+                </MainContent>
             </Main>
             <Footer />
         </>

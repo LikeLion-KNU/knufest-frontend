@@ -9,7 +9,7 @@ import { Map } from "@/components/map/Map";
 
 import { useAllBooth } from "@/services/booth/booth.hooks";
 
-import { PageContainer, MainContent, VisibleList } from "./BoothListPage.styled";
+import { VisibleList } from "./BoothListPage.styled";
 
 const listVariants: Variants = {
     hidden: {
@@ -28,38 +28,36 @@ const BoothListPage: React.FC = () => {
     const { isPending, boothList } = useAllBooth();
 
     return (
-        <PageContainer>
-            <MainContent>
-                <TransformWrapper initialScale={0.5} minScale={0.5}>
-                    <TransformComponent
-                        wrapperClass="map-wrapper"
-                        contentClass="map"
-                        wrapperStyle={{ width: "100%", aspectRatio: "4/3" }}
-                    >
-                        <Map />
-                    </TransformComponent>
-                </TransformWrapper>
+        <>
+            <TransformWrapper initialScale={0.5} minScale={0.5}>
+                <TransformComponent
+                    wrapperClass="map-wrapper"
+                    contentClass="map"
+                    wrapperStyle={{ width: "100%", aspectRatio: "4/3" }}
+                >
+                    <Map />
+                </TransformComponent>
+            </TransformWrapper>
 
-                <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                    {isPending ? (
-                        <Loader />
-                    ) : (
-                        boothList &&
-                        boothList.map((booth) => {
-                            return (
-                                <Booth
-                                    index={booth.boothnum}
-                                    name={booth.boothName}
-                                    num={booth.likes}
-                                    likeable={!booth.likable}
-                                    category={booth.categori}
-                                />
-                            );
-                        })
-                    )}
-                </VisibleList>
-            </MainContent>
-        </PageContainer>
+            <VisibleList variants={listVariants} initial="hidden" animate="visible">
+                {isPending ? (
+                    <Loader />
+                ) : (
+                    boothList &&
+                    boothList.map((booth) => {
+                        return (
+                            <Booth
+                                index={booth.boothnum}
+                                name={booth.boothName}
+                                num={booth.likes}
+                                likeable={!booth.likable}
+                                category={booth.categori}
+                            />
+                        );
+                    })
+                )}
+            </VisibleList>
+        </>
     );
 };
 export default BoothListPage;

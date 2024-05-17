@@ -1,3 +1,4 @@
+import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
 import daegun from "@/assets/daegun.png";
@@ -33,11 +34,11 @@ export default function ContributorPage() {
     return (
         <>
             <TextContainer>
-                <Text size="xl" weight="bold" variant="darkpurple">
-                    만든이들
-                </Text>
+                <Paragraph size="xl" weight="bold" variant="darkpurple" isTitle>
+                    Contributors
+                </Paragraph>
                 <Text size="s" weight="normal" variant="lightpurple">
-                    2024 경북대 대동제 홈페이지를 위해 <br />
+                    2024 경북대 대동제 홈페이지는 <br />
                     컴퓨터학부 멋쟁이사자처럼 운영진에서 <br />
                     학생 분들의 편의를 위해 제작하게 되었습니다. <br />
                     <br />

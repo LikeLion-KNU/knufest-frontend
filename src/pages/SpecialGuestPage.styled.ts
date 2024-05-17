@@ -1,20 +1,8 @@
 import styled from "styled-components";
 
-export const MainContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    position: relative;
-    p {
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
-        font-family: "Blinker SemiBold", monospace;
-    }
-`;
 export const BackImg = styled.img`
     position: absolute;
-    top: 0;
+    top: -30px;
     z-index: -10;
     width: 100%;
 `;
@@ -27,15 +15,8 @@ export const GuestContainer = styled.div`
     flex-direction: column;
     gap: 36px;
     p {
-        text-shadow: 0px 2px 4px rgba(0, 0, 0, 25%);
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     }
-`;
-export const Date = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 33px;
 `;
 
 export const GuestCard = styled.div`
