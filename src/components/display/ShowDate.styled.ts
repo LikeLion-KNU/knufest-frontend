@@ -10,5 +10,6 @@ export const ShowDateLink = styled.a`
     p {
         margin: 0;
         line-height: 20px;
+        font-family: "Blinker SemiBold", sans-serif;
     }
 `;
