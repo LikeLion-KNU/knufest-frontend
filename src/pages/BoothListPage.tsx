@@ -4,9 +4,11 @@ import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import { Variants } from "framer-motion";
 
 import { Booth } from "@/components/display/Booth";
+import { Loader } from "@/components/feedback/Loader";
 import { Map } from "@/components/map/Map";
 
-// import { useVisitor } from "@/hooks/useVisitor";
+import { useAllBooth } from "@/services/booth/booth.hooks";
+
 import { VisibleList } from "./BoothListPage.styled";
 
 const listVariants: Variants = {
@@ -23,16 +25,7 @@ const listVariants: Variants = {
 };
 
 const BoothListPage: React.FC = () => {
-    /**
-     *  a: 기타
-     *  b: 복합
-     *  c: 주막
-     */
-    const lists = ["컴퓨터학부 주점이름", "전자 주점이름", "토목 주점이름", "기계 주점이름", "식품공학부 주점이름"];
-    const num = 356;
-    //list랑 index, heart는 받아온 값으로 수정
-
-    // const { visitorId } = useVisitor();
+    const { isPending, boothList } = useAllBooth();
 
     return (
         <>
@@ -47,9 +40,22 @@ const BoothListPage: React.FC = () => {
             </TransformWrapper>
 
             <VisibleList variants={listVariants} initial="hidden" animate="visible">
-                {lists.map((name, index) => {
-                    return <Booth index={index} name={name} num={num} likable={true} />;
-                })}
+                {isPending ? (
+                    <Loader />
+                ) : (
+                    boothList &&
+                    boothList.map((booth) => {
+                        return (
+                            <Booth
+                                index={booth.boothnum}
+                                name={booth.boothName}
+                                num={booth.likes}
+                                likeable={!booth.likable}
+                                category={booth.categori}
+                            />
+                        );
+                    })
+                )}
             </VisibleList>
         </>
     );

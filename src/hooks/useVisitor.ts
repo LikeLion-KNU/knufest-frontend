@@ -5,7 +5,7 @@ import fingerprint from "@fingerprintjs/fingerprintjs";
 const fp = fingerprint.load();
 
 export const useVisitor = () => {
-    const [visitorId, setVisitorId] = useState<string | undefined>(undefined);
+    const [visitorId, setVisitorId] = useState<string | null>(null);
 
     useEffect(() => {
         fp.then((fp) => {

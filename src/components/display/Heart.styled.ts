@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 interface IHeart {
-    likable: boolean;
+    likeable: boolean;
 }
 export const HeartWrapper = styled.div<IHeart>`
+    flex-shrink: 0;
+
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -16,5 +18,9 @@ export const HeartWrapper = styled.div<IHeart>`
     padding: 5px;
     font-size: 12px;
     line-height: 8px;
-    color: ${(props) => (props.likable ? "#9874FF" : "#A4A4A4")};
+    color: ${(props) => (props.likeable ? "#9874FF" : "#A4A4A4")};
+
+    &:hover {
+        cursor: pointer;
+    }
 `;
