@@ -19,6 +19,8 @@ const TimeTablePage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
     const timetableData = timetableDataJson as TimetableData;
     const headerOffset = 100;
+    const currentTime = new Date();
+    // const currentTime = new Date("2024-05-21T11:00:00"); // Test
 
     const locationRefs = {
         "1주차장": useRef<HTMLDivElement>(null),
@@ -77,16 +79,19 @@ const TimeTablePage: React.FC = () => {
                 title="1주차장"
                 data={getTimetableData(timetableData)(activeDate, "1주차장")}
                 locationRef={locationRefs["1주차장"]}
+                currentTime={currentTime}
             />
             <TimeTableSection
                 title="백양로"
                 data={getTimetableData(timetableData)(activeDate, "백양로")}
                 locationRef={locationRefs["백양로"]}
+                currentTime={currentTime}
             />
             <TimeTableSection
                 title="대운동장"
                 data={getTimetableData(timetableData)(activeDate, "대운동장")}
                 locationRef={locationRefs["대운동장"]}
+                currentTime={currentTime}
             />
             <ScrollTopButton onClick={handleScrollToTop}>
                 <AiOutlineArrowUp size={24} />
