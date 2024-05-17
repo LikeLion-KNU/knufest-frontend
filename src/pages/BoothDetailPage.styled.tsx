@@ -32,7 +32,7 @@ export const ContentContainer = styled.form`
     border: 1px solid #3f3a6c;
     border-radius: 30px;
     position: relative;
-    
+
     textarea {
         color: #5d5a88;
         border: none;
@@ -70,5 +70,4 @@ export const SubBtn = styled.button`
     right: 10px;
 `;
 
-export const SendImg = styled.img`
-`;
+export const SendImg = styled.img``;

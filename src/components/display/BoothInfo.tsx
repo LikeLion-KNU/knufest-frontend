@@ -1,13 +1,21 @@
 import React from "react";
+import { useState, useRef, useCallback, useEffect } from "react";
 
 import jannaviImage from "@/assets/jannavi.jpg";
 import norazoImage from "@/assets/norazo.jpg";
 
 import { Text } from "../typography/Text";
-import { BoothDetail, BoothImg, BoothName, ImgWrapper, ImgContainer, InfoWrapper, DotWrapper, Dot } from "./BoothInfo.styled";
+import {
+    BoothDetail,
+    BoothImg,
+    BoothName,
+    ImgWrapper,
+    ImgContainer,
+    InfoWrapper,
+    DotWrapper,
+    Dot,
+} from "./BoothInfo.styled";
 import { Heart } from "./Heart";
-
-import { useState, useRef,useCallback, useEffect } from "react";
 
 //zustand 로 refactor 필요
 const BoothInfo: React.FC = () => {
@@ -19,32 +27,32 @@ const BoothInfo: React.FC = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
-  
+
     const updateCurrentIndex = useCallback((entries: IntersectionObserverEntry[]) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const index = slideRefs.current.indexOf(entry.target as HTMLDivElement);
-          if (index !== -1) {
-            setCurrentIndex(index);
-          }
-        }
-      });
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const index = slideRefs.current.indexOf(entry.target as HTMLDivElement);
+                if (index !== -1) {
+                    setCurrentIndex(index);
+                }
+            }
+        });
     }, []);
-  
+
     useEffect(() => {
         const observer = new IntersectionObserver(updateCurrentIndex, {
             root: null,
-            threshold: 0.5
+            threshold: 0.5,
         });
-  
-        slideRefs.current.forEach(slide => {
+
+        slideRefs.current.forEach((slide) => {
             if (slide) {
-            observer.observe(slide);
+                observer.observe(slide);
             }
         });
-  
+
         return () => {
-            slideRefs.current.forEach(slide => {
+            slideRefs.current.forEach((slide) => {
                 if (slide) {
                     observer.unobserve(slide);
                 }
@@ -53,11 +61,11 @@ const BoothInfo: React.FC = () => {
     }, [updateCurrentIndex]);
 
     return (
-            <>
+        <>
             <ImgContainer>
                 <ImgWrapper>
                     {boothImg.map((src, index) => {
-                            return <BoothImg key={index} src={src} ref={el => slideRefs.current[index] = el}/>;
+                        return <BoothImg key={index} src={src} ref={(el) => (slideRefs.current[index] = el)} />;
                     })}
                 </ImgWrapper>
                 <DotWrapper>

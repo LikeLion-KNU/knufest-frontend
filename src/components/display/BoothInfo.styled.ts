@@ -13,7 +13,7 @@ export const ImgWrapper = styled.div`
     margin-bottom: 10px;
 
     display: flex;
-    flex-direction: row;        
+    flex-direction: row;
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
