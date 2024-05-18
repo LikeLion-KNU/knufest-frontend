@@ -33,7 +33,7 @@ export const ContentContainer = styled.form`
     border-radius: 30px;
     position: relative;
 
-    textarea {
+    input {
         color: #5d5a88;
         border: none;
         padding: 0px 25px;

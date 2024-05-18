@@ -3,18 +3,8 @@ import { useState, useRef, useCallback, useEffect } from "react";
 
 import { IReadBoothByIdResponse } from "@/services/booth/booth.types";
 
-import { Text } from "../typography/Text";
-import {
-    BoothDetail,
-    BoothImg,
-    BoothName,
-    ImgWrapper,
-    ImgContainer,
-    InfoWrapper,
-    DotWrapper,
-    Dot,
-} from "./BoothInfo.styled";
-import { Heart } from "./Heart";
+import { Booth } from "./Booth";
+import { BoothImg, ImgWrapper, ImgContainer, InfoWrapper, DotWrapper, Dot } from "./BoothInfo.styled";
 
 interface BoothInfoProps {
     boothDetail: IReadBoothByIdResponse;
@@ -42,16 +32,12 @@ const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
         });
 
         slideRefs.current.forEach((slide) => {
-            if (slide) {
-                observer.observe(slide);
-            }
+            slide && observer.observe(slide);
         });
 
         return () => {
             slideRefs.current.forEach((slide) => {
-                if (slide) {
-                    observer.unobserve(slide);
-                }
+                slide && observer.unobserve(slide);
             });
         };
     }, [updateCurrentIndex]);
@@ -70,19 +56,15 @@ const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
                     ))}
                 </DotWrapper>
             </ImgContainer>
+
             <InfoWrapper>
-                <BoothName>
-                    <Text size="20px" weight="bold" variant="#3F3A6C">
-                        {boothDetail.boothName}
-                    </Text>
-                    <Heart num={boothDetail.likes} likable={boothDetail.likable} />
-                </BoothName>
-                <BoothDetail>
-                    <Text size="s" weight="normal">
-                        {boothDetail.categori}
-                    </Text>
-                    <hr />
-                </BoothDetail>
+                <Booth
+                    index={boothDetail.boothnum}
+                    name={boothDetail.boothName}
+                    num={boothDetail.likes}
+                    likeable={!boothDetail.likable}
+                    category={boothDetail.categori}
+                />
             </InfoWrapper>
         </>
     );
