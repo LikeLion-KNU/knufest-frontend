@@ -15,6 +15,7 @@
         "@fingerprintjs/fingerprintjs": "^4.3.0",
         "@reduxjs/toolkit": "^2.2.4",
         "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+        "@woowa-babble/random-nickname": "^1.0.2",
         "axios": "^1.6.8",
         "babel-plugin-styled-components": "^2.1.4",
         "eslint-config-prettier": "^9.1.0",

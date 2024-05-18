@@ -15,6 +15,5 @@ export const useVisitor = () => {
         });
     }, []);
 
-    console.log(visitorId);
     return { visitorId };
 };
