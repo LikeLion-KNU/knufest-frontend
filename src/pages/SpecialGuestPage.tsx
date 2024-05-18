@@ -69,7 +69,7 @@ const SpecialGuestPage: React.FC = () => {
                 <div>
                     <BiSolidMap size={18} color="#5d5a88" />
                     <Text size="m" weight="bold" variant="darkpurple">
-                        1주차장
+                        대운동장
                     </Text>
                 </div>
                 <GuestCard>{renderGuests()}</GuestCard>
