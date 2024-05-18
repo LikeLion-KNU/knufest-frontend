@@ -1,18 +1,53 @@
 import styled from "styled-components";
 
+export const ImgContainer = styled.div`
+    margin: 0 auto;
+`;
+
 export const ImgWrapper = styled.div`
     overflow: hidden;
     width: 90%;
+    margin: 0 auto;
     aspect-ratio: 1 / 1;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 `;
 
 export const BoothImg = styled.img`
     width: 100%;
-    height: 100%;
+    scroll-snap-align: center;
+    flex-shrink: 0;
     object-fit: cover;
     object-position: 50% 50%;
+    border-radius: 20px;
+`;
+
+export const DotWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+`;
+
+export const Dot = styled.div<{ active: boolean }>`
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: ${({ active }) => (active ? "#3F3A6C" : "#dddddd")};
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 `;
 
 export const InfoWrapper = styled.div`

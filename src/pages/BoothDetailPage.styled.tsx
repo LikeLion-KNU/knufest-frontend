@@ -13,7 +13,7 @@ export const DetailPageWrapper = styled.div`
 `;
 export const BottomBox = styled.div`
     height: 70px;
-    width: 90%;
+    width: min(100%, 700px);
     position: fixed;
     display: flex;
     bottom: 0;
@@ -23,7 +23,7 @@ export const BottomBox = styled.div`
 `;
 export const ContentContainer = styled.form`
     height: 46px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,6 +31,7 @@ export const ContentContainer = styled.form`
     align-items: center;
     border: 1px solid #3f3a6c;
     border-radius: 30px;
+    position: relative;
 
     textarea {
         color: #5d5a88;
