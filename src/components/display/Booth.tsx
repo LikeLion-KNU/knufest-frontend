@@ -24,13 +24,13 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category }
 
     return (
         <BoothListItem variants={itemVariants}>
-            <BoothLink href={`booth/${category}/${index + 1}`}>
-                <Index>{index + 1}</Index>
+            <BoothLink href={`booth/${category}/${index}`}>
+                <Index>{index}</Index>
                 <Text size="m" weight="bold" variant="#5D5A88">
                     {name}
                 </Text>
             </BoothLink>
-            <Heart num={likeAble ? num + 1 : num} likable={likeAble} onClick={handleLikeBtnClick} />
+            <Heart num={likeAble ? num : num} likable={likeAble} onClick={handleLikeBtnClick} />
         </BoothListItem>
     );
 };
