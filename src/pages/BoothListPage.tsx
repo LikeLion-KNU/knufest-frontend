@@ -26,7 +26,6 @@ const listVariants: Variants = {
 
 const BoothListPage: React.FC = () => {
     const { isPending, boothList } = useAllBooth();
-
     return (
         <>
             <TransformWrapper initialScale={0.5} minScale={0.5}>

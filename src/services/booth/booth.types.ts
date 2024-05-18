@@ -14,6 +14,7 @@ export interface IReadAllBoothResponse {
 
 export interface IReadBoothByIdResponse {
     id: number;
+    page: number;
     boothName: string;
     likes: number;
     categori: string;
@@ -29,4 +30,11 @@ export interface IReadBoothByIdResponse {
         },
     ];
     likable: boolean;
+}
+
+export interface ICommentRead {
+    time: string;
+    name: string;
+    comment: string;
+    content: string;
 }

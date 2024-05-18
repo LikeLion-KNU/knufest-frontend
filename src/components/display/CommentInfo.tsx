@@ -2,25 +2,18 @@ import React, { useState } from "react";
 
 import { Pagination } from "@/components/navigation/Pagination";
 
+import { ICommentRead } from "@/services/booth/booth.types";
+
 import { Text } from "../typography/Text";
 import Comment from "./Comment";
 import { CommentList, CommentWrapper, CommentContainer, Title } from "./CommentInfo.styled";
 
-export interface IComment {
-    name: string;
-    time: string;
-    content: string;
-    deletable: boolean;
+interface CommentInfoProps {
+    commentsDetail: ICommentRead[];
 }
 
-const CommentInfo: React.FC = () => {
-    const [commentnum] = useState<number>(221);
-
-    const comments: IComment[] = [
-        { name: "User1", time: "2024-05-13", content: "첫 번째 댓글입니다.", deletable: false },
-        { name: "User2", time: "2024-05-14", content: "두 번째 댓글입니다.", deletable: true },
-        { name: "User3", time: "2024-05-15", content: "세 번째 댓글입니다.", deletable: false },
-    ];
+const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
+    const [commentnum] = useState<number>(commentsDetail.length);
 
     return (
         <CommentWrapper>
@@ -33,16 +26,10 @@ const CommentInfo: React.FC = () => {
                 </Title>
             </Text>
             <CommentList>
-                {comments.map((comment, index) => (
-                    <div>
+                {commentsDetail.map((comment, index) => (
+                    <div key={index}>
                         <CommentContainer>
-                            <Comment
-                                key={index}
-                                name={comment.name}
-                                time={comment.time}
-                                content={comment.content}
-                                deletable={comment.deletable}
-                            />
+                            <Comment name={comment.name} time={comment.time} content={comment.content} comment={""} />
                         </CommentContainer>
                         <hr />
                     </div>

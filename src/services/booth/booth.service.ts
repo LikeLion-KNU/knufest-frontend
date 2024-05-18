@@ -43,4 +43,31 @@ export const boothService = {
             throw error;
         }
     },
+
+    createComment: async (userId: string, category: string, boothId: number, comment: string) => {
+        try {
+            const response = await api.post(`/booth/${category}/${boothId}/comment?userHash=${userId}`, {
+                name: null,
+                comment,
+            });
+            return response;
+        } catch (error) {
+            if (error instanceof AxiosError) {
+                // 오류 처리 추가 필요
+            }
+            throw error;
+        }
+    },
+
+    readComment: async (userId: string, category: string, boothId: number, page: number) => {
+        try {
+            const response = await api.get(`/booth/${category}/${boothId}/comment?userHash=${userId}&page=${page}`);
+            return response;
+        } catch (error) {
+            if (error instanceof AxiosError) {
+                // 오류 처리 추가 필요
+            }
+            throw error;
+        }
+    },
 };

@@ -1,13 +1,10 @@
-import { FaRegTrashAlt } from "react-icons/fa";
+import { ICommentRead } from "@/services/booth/booth.types";
 
 import { Paragraph } from "../typography/Paragraph";
 import { Text } from "../typography/Text";
 import { CommentContent, CommentInfoWrapper } from "./Comment.styled";
-import { IComment } from "./CommentInfo";
 
-//zustand로 refactor 필요
-
-const Comment = ({ name, time, content, deletable }: IComment) => {
+const Comment = ({ name, time, content }: ICommentRead) => {
     return (
         <>
             <CommentContent>
@@ -19,7 +16,6 @@ const Comment = ({ name, time, content, deletable }: IComment) => {
                         </Text>
                     </CommentInfoWrapper>
                 </Text>
-                {deletable ? <FaRegTrashAlt color="#3F3A6C" size={"24px"} /> : null}
             </CommentContent>
             <Paragraph size="s" weight="normal">
                 {content}
