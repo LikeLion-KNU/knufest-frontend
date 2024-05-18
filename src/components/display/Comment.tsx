@@ -1,10 +1,10 @@
-import { ICommentRead } from "@/services/booth/booth.types";
+import { IComment } from "@/services/comment/comment.types";
 
 import { Paragraph } from "../typography/Paragraph";
 import { Text } from "../typography/Text";
 import { CommentContent, CommentInfoWrapper } from "./Comment.styled";
 
-const Comment = ({ name, time, content }: ICommentRead) => {
+export const Comment: React.FC<Omit<IComment, "id">> = ({ name, created, comment }) => {
     return (
         <>
             <CommentContent>
@@ -12,16 +12,14 @@ const Comment = ({ name, time, content }: ICommentRead) => {
                     <CommentInfoWrapper>
                         {name}
                         <Text size="xs" weight="normal" variant="#A3A3A3">
-                            {time}
+                            {created}
                         </Text>
                     </CommentInfoWrapper>
                 </Text>
             </CommentContent>
             <Paragraph size="s" weight="normal">
-                {content}
+                {comment}
             </Paragraph>
         </>
     );
 };
-
-export default Comment;

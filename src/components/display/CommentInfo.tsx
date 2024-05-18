@@ -2,14 +2,16 @@ import React, { useState } from "react";
 
 import { Pagination } from "@/components/navigation/Pagination";
 
-import { ICommentRead } from "@/services/booth/booth.types";
+import { IComment } from "@/services/comment/comment.types";
+
+import { parseCreatedDate } from "@/utils/parseCreatedDate";
 
 import { Text } from "../typography/Text";
-import Comment from "./Comment";
+import { Comment } from "./Comment";
 import { CommentList, CommentWrapper, CommentContainer, Title } from "./CommentInfo.styled";
 
 interface CommentInfoProps {
-    commentsDetail: ICommentRead[];
+    commentsDetail: IComment[];
 }
 
 const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
@@ -29,9 +31,14 @@ const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
                 {commentsDetail.map((comment, index) => (
                     <div key={index}>
                         <CommentContainer>
-                            <Comment name={comment.name} time={comment.time} content={comment.content} comment={""} />
+                            <Comment
+                                name={comment.name}
+                                created={parseCreatedDate(comment.created)}
+                                comment={comment.comment}
+                                deleteable={comment.deleteable}
+                            />
                         </CommentContainer>
-                        <hr />
+                        <hr style={{ marginTop: "15px" }} />
                     </div>
                 ))}
             </CommentList>
