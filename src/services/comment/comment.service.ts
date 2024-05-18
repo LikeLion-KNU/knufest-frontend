@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { AxiosError } from "axios";
 
 import { HTTPException, api } from "@/config/api";
