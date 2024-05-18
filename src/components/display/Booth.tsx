@@ -24,7 +24,7 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category }
 
     return (
         <BoothListItem variants={itemVariants}>
-            <BoothLink href={`booth/${index + 1}`}>
+            <BoothLink href={`booth/${category}/${index + 1}`}>
                 <Index>{index + 1}</Index>
                 <Text size="m" weight="bold" variant="#5D5A88">
                     {name}

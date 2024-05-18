@@ -24,7 +24,7 @@ const App: React.FC = () => {
                         <Route index path="/" element={<HomePage />} />
                         <Route path="/timetable" element={<TimeTablePage />}></Route>
                         <Route path="/booth" element={<BoothListPage />}></Route>
-                        <Route path="/booth/:id" element={<BoothDetailPage />}></Route>
+                        <Route path="/booth/:category/:boothId" element={<BoothDetailPage />} />
                         <Route path="/guests" element={<SpecialGuestPage />}></Route>
                         <Route path="/contributors" element={<ContributorPage />}></Route>
                     </Route>

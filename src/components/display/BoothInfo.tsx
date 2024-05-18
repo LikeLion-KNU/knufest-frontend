@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useRef, useCallback, useEffect } from "react";
 
-import jannaviImage from "@/assets/jannavi.jpg";
-import norazoImage from "@/assets/norazo.jpg";
+import { IReadBoothByIdResponse } from "@/services/booth/booth.types";
 
 import { Text } from "../typography/Text";
 import {
@@ -17,14 +16,11 @@ import {
 } from "./BoothInfo.styled";
 import { Heart } from "./Heart";
 
-//zustand 로 refactor 필요
-const BoothInfo: React.FC = () => {
-    const boothdetail =
-        "멋쟁이사자처럼 주점에서는 노래방 마이크로 김대건이 노래를 하고 춤도 추고 히어로 서사에 대해 설명할 것입니다.";
-    const boothName = "멋쟁이 사자처럼 주점";
-    const num = 365;
-    const boothImg = [jannaviImage, norazoImage, jannaviImage];
+interface BoothInfoProps {
+    boothDetail: IReadBoothByIdResponse;
+}
 
+const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -64,12 +60,12 @@ const BoothInfo: React.FC = () => {
         <>
             <ImgContainer>
                 <ImgWrapper>
-                    {boothImg.map((src, index) => {
+                    {boothDetail.urls.map((src, index) => {
                         return <BoothImg key={index} src={src} ref={(el) => (slideRefs.current[index] = el)} />;
                     })}
                 </ImgWrapper>
                 <DotWrapper>
-                    {boothImg.map((_, index) => (
+                    {boothDetail.urls.map((_, index) => (
                         <Dot key={index} active={index === currentIndex} />
                     ))}
                 </DotWrapper>
@@ -77,13 +73,13 @@ const BoothInfo: React.FC = () => {
             <InfoWrapper>
                 <BoothName>
                     <Text size="20px" weight="bold" variant="#3F3A6C">
-                        {boothName}
+                        {boothDetail.boothName}
                     </Text>
-                    <Heart num={num} likable={true} />
+                    <Heart num={boothDetail.likes} likable={boothDetail.likable} />
                 </BoothName>
                 <BoothDetail>
                     <Text size="s" weight="normal">
-                        {boothdetail}
+                        {boothDetail.categori}
                     </Text>
                     <hr />
                 </BoothDetail>
