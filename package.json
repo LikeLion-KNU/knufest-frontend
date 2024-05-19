@@ -12,6 +12,7 @@
         "compile": "tsc"
     },
     "dependencies": {
+        "@emotion/css": "^11.11.2",
         "@fingerprintjs/fingerprintjs": "^4.3.0",
         "@reduxjs/toolkit": "^2.2.4",
         "@trivago/prettier-plugin-sort-imports": "^4.3.0",

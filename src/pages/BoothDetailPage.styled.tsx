@@ -10,6 +10,10 @@ export const DetailPageWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    p {
+        width: 90%;
+    }
 `;
 export const BottomBox = styled.div`
     height: 70px;

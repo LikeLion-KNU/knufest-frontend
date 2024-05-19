@@ -11,7 +11,6 @@ export const BoothListItem = styled(motion.li)`
     padding: 0px 25px;
     margin: 12px 0;
     border-radius: 25px;
-    background-color: #e9e9fb;
 `;
 
 export const BoothLink = styled(Link)`
@@ -34,10 +33,12 @@ export const BoothLink = styled(Link)`
     }
 `;
 
-export const Index = styled.div`
+export const Index = styled.div<{ category: string }>`
     flex-shrink: 0;
+    flex-basis: 30px;
+    flex-grow: 1;
 
-    width: 30px;
+    width: auto;
     height: 30px;
     border-radius: 10px;
 
@@ -47,4 +48,15 @@ export const Index = styled.div`
 
     color: #fff;
     background-color: #9874ff;
+
+    background-color: ${(props) => {
+        switch (props.category) {
+            case "pub":
+                return "#9874ff";
+            case "comp":
+                return "#66A382";
+            case "other":
+                return "#6273AD";
+        }
+    }};
 `;

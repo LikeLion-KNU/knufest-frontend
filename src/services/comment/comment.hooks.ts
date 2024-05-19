@@ -28,6 +28,18 @@ export const useComment = () => {
         [category, boothId, visitorId],
     );
 
+    const handleCommentDelete = useCallback(
+        (commendId: number) => {
+            if (window.confirm("댓글을 삭제 하시겠습니까?")) {
+                commentService.deleteComment(visitorId as string, commendId).then(() => {
+                    setRefetch(true);
+                    alert("댓글이 삭제되었습니다!");
+                });
+            }
+        },
+        [visitorId],
+    );
+
     useEffect(() => {
         setIsPending(true);
         commentService
@@ -41,23 +53,5 @@ export const useComment = () => {
             });
     }, [category, currentPage, visitorId, boothId, refetch]);
 
-    return { isPending, comments, handleCommentSubmit, commentInputRef };
-};
-
-export const useDeleteable = (commentId: number) => {
-    const { visitorId } = useVisitor();
-    const [refetch, setRefetch] = useState<boolean>(false);
-
-    const handleDeleteBtnClick = useCallback(() => {
-        if (!visitorId) return;
-
-        if (window.confirm("삭제하시겠습니까?")) {
-            commentService.deleteComment(visitorId, commentId).then(() => {
-                setRefetch(!refetch);
-                alert("삭제되었습니다.");
-            });
-        }
-    }, [visitorId, commentId, refetch]);
-
-    return { handleDeleteBtnClick };
+    return { isPending, comments, handleCommentSubmit, handleCommentDelete, commentInputRef };
 };
