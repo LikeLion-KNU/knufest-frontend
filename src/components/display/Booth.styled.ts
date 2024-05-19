@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
@@ -12,7 +14,7 @@ export const BoothListItem = styled(motion.li)`
     background-color: #e9e9fb;
 `;
 
-export const BoothLink = styled.a`
+export const BoothLink = styled(Link)`
     width: 100%;
     height: 100%;
 

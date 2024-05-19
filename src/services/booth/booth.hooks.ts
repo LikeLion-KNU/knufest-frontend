@@ -1,9 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 import { useVisitor } from "@/hooks/useVisitor";
 
 import { boothService } from "./booth.service";
-import { IBoothItem } from "./booth.types";
+import { IBoothItem, IReadBoothByIdResponse } from "./booth.types";
 
 export const useAllBooth = () => {
     const [isPending, setIsPending] = useState<boolean>(false);
@@ -42,4 +43,26 @@ export const useLikes = (initLikeable: boolean, category: string, boothId: numbe
     }, [boothId, visitorId, category]);
 
     return { likeable, handleLikeBtnClick };
+};
+
+export const useBoothDetail = () => {
+    const { category, boothId } = useParams();
+    const { visitorId } = useVisitor();
+
+    const [isPending, setIsPending] = useState<boolean>(false);
+    const [boothDetail, setBoothDetail] = useState<IReadBoothByIdResponse | null>(null);
+
+    useEffect(() => {
+        setIsPending(true);
+        boothService
+            .readBoothById(category as string, parseInt(boothId as string), visitorId as string)
+            .then((data) => {
+                setBoothDetail(data);
+            })
+            .finally(() => {
+                setIsPending(false);
+            });
+    }, [category, boothId, visitorId]);
+
+    return { isPending, boothDetail };
 };
