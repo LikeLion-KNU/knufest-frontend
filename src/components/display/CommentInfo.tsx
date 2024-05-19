@@ -39,7 +39,7 @@ const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
                                 deleteable={comment.deleteable}
                             />
                         </CommentContainer>
-                        <hr style={{ marginTop: "15px" }} />
+                        {index !== 4 && <hr style={{ marginTop: "15px" }} />}
                     </div>
                 ))}
             </CommentList>
