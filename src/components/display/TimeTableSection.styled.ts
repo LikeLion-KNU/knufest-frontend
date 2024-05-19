@@ -40,4 +40,5 @@ export const EventTime = styled(Text)`
 export const EventText = styled(Text)`
     display: flex;
     align-items: center;
+    white-space: pre-line;
 `;

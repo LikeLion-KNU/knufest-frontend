@@ -104,12 +104,6 @@ const TimeTablePage: React.FC = () => {
                 currentTime={currentTime}
             />
             <TimeTableSection
-                title="소운동장, 복지관"
-                data={getTimetableData(timetableData)(activeDate, "소운동장, 복지관")}
-                locationRef={locationRefs["소운동장, 복지관"]}
-                currentTime={currentTime}
-            />
-            <TimeTableSection
                 title="생협 매대"
                 data={getTimetableData(timetableData)(activeDate, "생협 매대")}
                 locationRef={locationRefs["생협 매대"]}
