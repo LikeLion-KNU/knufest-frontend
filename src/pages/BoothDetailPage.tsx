@@ -11,6 +11,7 @@ import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
 import { DetailPageWrapper, SubBtn, ContentContainer, SendImg, BottomBox } from "@/pages/BoothDetailPage.styled";
+import { ScrollTopButton } from "@/pages/BoothDetailPage.styled";
 
 import { useBoothDetail } from "@/services/booth/booth.hooks";
 import { useComment } from "@/services/comment/comment.hooks";
@@ -20,7 +21,6 @@ import sendImg from "@/assets/send.png";
 import { parseCreatedDate } from "@/utils/parseCreatedDate";
 
 import { CommentHeader } from "./BoothListPage.styled";
-import { ScrollTopButton } from "./TimeTablePage.styled";
 
 export default function BoothDetailPage() {
     const { isPending, boothDetail } = useBoothDetail();
