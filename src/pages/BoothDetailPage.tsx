@@ -13,22 +13,28 @@ import sendImg from "@/assets/send.png";
 
 export default function BoothDetailPage() {
     const { isPending, boothDetail } = useBoothDetail();
-    const { isPending: isCommentFetchPending, comments, commentInputRef, handleCommentSubmit } = useComment();
+    const {
+        isPending: isCommentFetchPending,
+        comments,
+        hasMore,
+        setPage,
+        commentInputRef,
+        handleCommentSubmit,
+    } = useComment();
 
     return (
         <DetailPageWrapper>
             {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} />}
-            {isCommentFetchPending ? <Loader /> : comments && <CommentInfo commentsDetail={comments} />}
-
+            {isCommentFetchPending ? (
+                <Loader />
+            ) : (
+                comments && <CommentInfo commentsDetail={comments} hasMore={hasMore} setPage={setPage} />
+            )}
             <BottomBox>
                 <ContentContainer
                     onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
                         e.preventDefault();
-
-                        if (!commentInputRef.current) return;
-                        if (commentInputRef.current.value === "") return;
-
-                        console.log(commentInputRef.current.value);
+                        if (!commentInputRef.current || commentInputRef.current.value === "") return;
                         handleCommentSubmit(commentInputRef.current.value);
                         commentInputRef.current.value = "";
                     }}
