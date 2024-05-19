@@ -59,7 +59,7 @@ export default function BoothDetailPage() {
                                         comment={comment.comment}
                                         deleteable={comment.deleteable}
                                         handleCommentDelete={() => {
-                                            handleCommentDelete(comment.id);
+                                            handleCommentDelete(comment.id as number);
                                         }}
                                     />
                                 </CommentContainer>
