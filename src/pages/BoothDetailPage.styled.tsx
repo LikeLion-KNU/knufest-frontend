@@ -68,6 +68,9 @@ export const SubBtn = styled.button`
     justify-content: center;
     position: absolute;
     right: 10px;
+    padding: 0;
 `;
 
-export const SendImg = styled.img``;
+export const SendImg = styled.img`
+    width: 50%;
+`;
