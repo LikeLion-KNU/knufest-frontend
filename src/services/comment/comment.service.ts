@@ -31,8 +31,7 @@ export const commentService = {
     },
 
     deleteComment: async (userHash: string, commentId: number) => {
-        const response = await api.delete(`/comment/${commentId}?userHash=${userHash}`,
-        );
+        const response = await api.delete(`/comment/${commentId}?userHash=${userHash}`);
         if (response instanceof AxiosError) {
             if (response.response?.status === 404) {
                 throw new HTTPException(404, "댓글이 없습니다");

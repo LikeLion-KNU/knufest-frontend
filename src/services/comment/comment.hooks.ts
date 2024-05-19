@@ -51,7 +51,7 @@ export const useDeleteable = (commentId: number) => {
     const handleDeleteBtnClick = useCallback(() => {
         if (!visitorId) return;
 
-        if(window.confirm("삭제하시겠습니까?")) {
+        if (window.confirm("삭제하시겠습니까?")) {
             commentService.deleteComment(visitorId as string, commentId as number).then(() => {
                 setRefetch((refetch) => !refetch);
                 alert("삭제되었습니다.");
