@@ -57,12 +57,7 @@ export default function BoothDetailPage() {
 
             <CommentHeader>
                 <Text size="20px" weight="bold">
-                    <Title>
-                        댓글
-                        <Text size="m" weight="bold" variant="#3F3A6C">
-                            {0}
-                        </Text>
-                    </Title>
+                    <Title>댓글</Title>
                 </Text>
             </CommentHeader>
 
