@@ -52,7 +52,7 @@ const Navigation: React.FC = () => {
             </NavHeader>
             <motion.ul initial="closed" animate={show ? "open" : "closed"} variants={listVariants}>
                 <NavItem variants={itemVariants}>
-                    <NavLink onClick={() => handleNavLinkClick("/booth")}>부스 별 지도</NavLink>
+                    <NavLink onClick={() => handleNavLinkClick("/booth")}>부스별 지도</NavLink>
                 </NavItem>
                 <NavItem variants={itemVariants}>
                     <NavLink onClick={() => handleNavLinkClick("/guests")}>Special Guest</NavLink>

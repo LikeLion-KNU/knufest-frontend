@@ -11,6 +11,8 @@ export const DetailPageWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    word-break: keep-all;
+
     p {
         width: 90%;
     }

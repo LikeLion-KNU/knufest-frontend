@@ -7,6 +7,7 @@ import { CommentList } from "@/components/display/CommentInfo.styled";
 import { CommentContainer } from "@/components/display/CommentInfo.styled";
 import { Title } from "@/components/display/CommentInfo.styled";
 import { Loader } from "@/components/feedback/Loader";
+import { Pagination } from "@/components/navigation/Pagination";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
@@ -44,22 +45,19 @@ export default function BoothDetailPage() {
         <DetailPageWrapper>
             {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} />}
 
-            {boothDetail?.boothDescription.split("<br/>").map((detail) => {
-                return (
-                    <Paragraph size="m" weight="normal">
-                        {detail}
-                    </Paragraph>
-                );
-            })}
+            {boothDetail?.boothDescription && boothDetail?.boothDescription.includes("<br/>")
+                ? boothDetail?.boothDescription.split("<br/>").map((detail) => {
+                      return (
+                          <Paragraph size="m" weight="normal">
+                              {detail}
+                          </Paragraph>
+                      );
+                  })
+                : boothDetail?.boothDescription}
 
             <CommentHeader>
                 <Text size="20px" weight="bold">
-                    <Title>
-                        댓글
-                        <Text size="m" weight="bold" variant="#3F3A6C">
-                            {0}
-                        </Text>
-                    </Title>
+                    <Title>댓글</Title>
                 </Text>
             </CommentHeader>
 
@@ -106,6 +104,8 @@ export default function BoothDetailPage() {
                     </SubBtn>
                 </ContentContainer>
             </BottomBox>
+
+            <Pagination></Pagination>
 
             <ScrollTopButton onClick={handleScrollToTop}>
                 <AiOutlineArrowUp size={24} />
