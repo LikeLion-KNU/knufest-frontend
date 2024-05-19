@@ -34,6 +34,7 @@ export const EventWrapper = styled.div<{ isCurrent: boolean }>`
 export const EventTime = styled(Text)`
     font-weight: bold;
     font-family: "DM Sans", sans-serif;
+    min-width: 110px;
 `;
 
 export const EventText = styled(Text)`
