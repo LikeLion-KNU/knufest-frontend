@@ -19,14 +19,5 @@ export interface IReadBoothByIdResponse {
     categori: string;
     boothnum: number;
     urls: string[];
-    comments: [
-        {
-            id: number;
-            name: string;
-            comment: string;
-            created: string;
-            deleteable: boolean;
-        },
-    ];
     likable: boolean;
 }
