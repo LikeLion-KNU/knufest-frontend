@@ -1,6 +1,4 @@
-
 import { useEffect, useRef, useState } from "react";
-
 
 import { ButtonList } from "@/components/display/ButtonList";
 import { Countdown } from "@/components/display/Countdown";
@@ -30,7 +28,7 @@ export default function HomePage() {
             setTotalUser(data.count);
         });
     }, []);
-    
+
     const festivalStartDate = new Date("2024-05-21T00:00:00");
     const festivalEndDate = new Date("2024-05-23T22:40:00");
 
