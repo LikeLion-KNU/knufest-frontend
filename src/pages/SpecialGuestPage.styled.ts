@@ -36,3 +36,10 @@ export const GuestCard = styled.div`
         display: none;
     }
 `;
+
+export const LocationWrapper = styled.div`
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+`;

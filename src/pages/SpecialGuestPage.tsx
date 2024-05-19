@@ -18,7 +18,7 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 
-import { GuestCard, GuestContainer, BackImg } from "./SpecialGuestPage.styled";
+import { GuestCard, GuestContainer, BackImg, LocationWrapper } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
@@ -68,12 +68,12 @@ const SpecialGuestPage: React.FC = () => {
                         { date: "5.23", day: "THU" },
                     ]}
                 />
-                <div>
+                <LocationWrapper>
                     <BiSolidMap size={18} color="#5d5a88" />
                     <Text size="m" weight="bold" variant="darkpurple">
                         대운동장
                     </Text>
-                </div>
+                </LocationWrapper>
                 <GuestCard>{renderGuests()}</GuestCard>
             </GuestContainer>
         </>
