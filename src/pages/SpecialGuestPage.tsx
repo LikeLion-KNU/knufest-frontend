@@ -10,6 +10,7 @@ import tencmImg from "@/assets/10cm.jpg";
 import backImg from "@/assets/BackImg.png";
 import hahaImg from "@/assets/haha.webp";
 import jannaviImg from "@/assets/jannavi.jpg";
+import jeonhangilImg from "@/assets/jeonhangil.webp";
 import leesangmi from "@/assets/leesangmi.jpg";
 import leeyeonghyun from "@/assets/leeyeonghyun.webp";
 import loykimImg from "@/assets/loykim.webp";
@@ -41,6 +42,7 @@ const SpecialGuestPage: React.FC = () => {
             { pic: tencmImg, name: "10CM" },
         ],
         "5.23": [
+            { pic: jeonhangilImg, name: "전한길" },
             { pic: loykimImg, name: "로이킴" },
             { pic: paulblancoImg, name: "Paul Balnco" },
             { pic: leeyeonghyun, name: "이영현(빅마마)" },
