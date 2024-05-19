@@ -52,6 +52,7 @@ export const useBoothDetail = () => {
     const [isPending, setIsPending] = useState<boolean>(false);
     const [boothDetail, setBoothDetail] = useState<IReadBoothByIdResponse | null>(null);
 
+    console.log("boothdetail landing");
     useEffect(() => {
         setIsPending(true);
         boothService

@@ -11,7 +11,7 @@ import { useComment } from "@/services/comment/comment.hooks";
 
 import sendImg from "@/assets/send.png";
 
-export default function BoothDetailPage() {
+const BoothDetailPage = React.memo(() => {
     const { isPending, boothDetail } = useBoothDetail();
     const {
         isPending: isCommentFetchPending,
@@ -47,4 +47,6 @@ export default function BoothDetailPage() {
             </BottomBox>
         </DetailPageWrapper>
     );
-}
+});
+
+export default BoothDetailPage;
