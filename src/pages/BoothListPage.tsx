@@ -7,6 +7,7 @@ import { Booth } from "@/components/display/Booth";
 import { Loader } from "@/components/feedback/Loader";
 import { Map } from "@/components/map/Map";
 import { Paragraph } from "@/components/typography/Paragraph";
+import { Text } from "@/components/typography/Text";
 
 import { useAllBooth } from "@/services/booth/booth.hooks";
 
@@ -35,8 +36,10 @@ const BoothListPage: React.FC = () => {
     const { isPending, boothList } = useAllBooth();
     return (
         <>
-            <Paragraph size="m" weight="normal">
-                좌, 우로 스크롤 해주세요!
+            <Paragraph size="m" weight="bold" variant="darkpurple">
+                <Text size="m" weight="bold">
+                    좌, 우로 스크롤 해주세요!
+                </Text>
             </Paragraph>
 
             <TransformWrapper initialScale={0.5} minScale={0.5}>

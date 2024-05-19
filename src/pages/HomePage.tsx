@@ -1,20 +1,31 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { ButtonList } from "@/components/display/ButtonList";
 import { Countdown } from "@/components/display/Countdown";
 import { Button } from "@/components/forms/Button";
+import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
 import { StyledImage, ElementContainer } from "@/pages/HomePage.styled";
+
+import { userService } from "@/services/user/user.service";
 
 import mainPageImage from "@/assets/main_page.jpg";
 
 export default function HomePage() {
     const quickAccessRef = useRef<HTMLDivElement>(null);
 
+    const [totalUser, setTotalUser] = useState<number | undefined>(undefined);
+
     const scrollToQuickAccess = () => {
         quickAccessRef.current?.scrollIntoView({ behavior: "smooth" });
     };
+
+    useEffect(() => {
+        userService.readTotalUsers().then((data) => {
+            setTotalUser(data.count);
+        });
+    }, []);
 
     return (
         <>
@@ -42,6 +53,10 @@ export default function HomePage() {
                 </Text>
                 <ButtonList />
             </ElementContainer>
+
+            <Paragraph size="m" weight="bold" variant="darkpurple">
+                총 사용자수 : {totalUser}
+            </Paragraph>
         </>
     );
 }

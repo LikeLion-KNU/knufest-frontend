@@ -7,7 +7,7 @@ import { useLikes } from "@/services/booth/booth.hooks";
 import { BoothLink, Index, BoothListItem } from "./Booth.styled";
 import { Heart } from "./Heart";
 
-interface IBooth {
+export interface IBooth {
     index: number;
     name: string;
     num: number;
@@ -24,9 +24,12 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category, 
     const { likeable: likeAble, handleLikeBtnClick } = useLikes(likeable, category, index);
 
     return (
-        <BoothListItem variants={itemVariants}>
+        <BoothListItem
+            variants={itemVariants}
+            style={{ backgroundColor: category === "pub" ? "#e9e9fb" : category === "comp" ? "#daf1e5" : "#dfe7ff" }}
+        >
             <BoothLink to={isNavigatable ? `/booth/${category}/${index}` : ""}>
-                {isNavigatable && <Index>{index}</Index>}
+                {isNavigatable && <Index category={category}>{category !== "it" ? index : `IT-${index}`}</Index>}
                 <Text size="m" weight="bold" variant="#5D5A88">
                     {name}
                 </Text>

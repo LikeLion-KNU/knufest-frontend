@@ -46,9 +46,18 @@ export const BoothSearchInput = styled.input`
 
     border-radius: 15px;
     border: 1px solid #9874ff;
-
     padding: 0px 10px;
 
     width: 90%;
     height: 50px;
+
+    color: #9874ff;
+
+    &::placeholder {
+        color: #9874ff;
+    }
+
+    &:focus {
+        outline: 1.5px solid #9874ff;
+    }
 `;
