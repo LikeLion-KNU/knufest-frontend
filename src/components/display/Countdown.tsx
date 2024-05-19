@@ -31,8 +31,8 @@ export const Countdown: React.FC<ICountdown> = ({ targetDate, onCountdownEnd, en
         <CountdownContainer>
             {isCountdownFinished ? (
                 <>
-                    <Text size="l" weight="bold" variant="darkpurple">
-                        대동제 막이 내리기까지 남은 시간
+                    <Text size="m" weight="bold" variant="darkpurple">
+                        대동제가 끝나기까지 남은 시간
                     </Text>
                     <Text size="xxl" weight="bold" variant="lightpurple">
                         {displayEndTime}
