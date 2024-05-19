@@ -10,6 +10,7 @@ import tencmImg from "@/assets/10cm.jpg";
 import backImg from "@/assets/BackImg.png";
 import hahaImg from "@/assets/haha.webp";
 import jannaviImg from "@/assets/jannavi.jpg";
+import jeonhangilImg from "@/assets/jeonhangil.webp";
 import leesangmi from "@/assets/leesangmi.jpg";
 import leeyeonghyun from "@/assets/leeyeonghyun.webp";
 import loykimImg from "@/assets/loykim.webp";
@@ -17,7 +18,7 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 
-import { GuestCard, GuestContainer, BackImg } from "./SpecialGuestPage.styled";
+import { GuestCard, GuestContainer, BackImg, LocationWrapper } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
@@ -41,6 +42,7 @@ const SpecialGuestPage: React.FC = () => {
             { pic: tencmImg, name: "10CM" },
         ],
         "5.23": [
+            { pic: jeonhangilImg, name: "전한길" },
             { pic: loykimImg, name: "로이킴" },
             { pic: paulblancoImg, name: "Paul Balnco" },
             { pic: leeyeonghyun, name: "이영현(빅마마)" },
@@ -66,12 +68,12 @@ const SpecialGuestPage: React.FC = () => {
                         { date: "5.23", day: "THU" },
                     ]}
                 />
-                <div>
+                <LocationWrapper>
                     <BiSolidMap size={18} color="#5d5a88" />
                     <Text size="m" weight="bold" variant="darkpurple">
                         대운동장
                     </Text>
-                </div>
+                </LocationWrapper>
                 <GuestCard>{renderGuests()}</GuestCard>
             </GuestContainer>
         </>

@@ -52,14 +52,16 @@ export const MenuIcon = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 22px;
+    height: 24px;
 `;
 
 export const MenuBar = styled.span`
     display: block;
-    height: 3px;
+    height: 4px;
     width: 100%;
-    background-color: black;
+    background-color: #fceefc;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 `;
 
 export const NavItem = styled(motion.li)`

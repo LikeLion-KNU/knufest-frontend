@@ -4,9 +4,13 @@ interface Event {
 }
 
 interface LocationData {
-    "1주차장": Event[];
-    백양로: Event[];
     대운동장: Event[];
+    "소운동장, 복지관": Event[];
+    다목적구장: Event[];
+    "백양로 동편": Event[];
+    "생협 매대": Event[];
+    "일청담 총학 중앙 부스": Event[];
+    "벚꽃길, 학생주차장": Event[];
 }
 
 export interface TimetableData {

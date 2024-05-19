@@ -31,7 +31,6 @@ const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
             root: null,
             threshold: 0.5,
         });
-
         slideRefs.current.forEach((slide) => {
             slide && observer.observe(slide);
         });
