@@ -32,6 +32,7 @@ const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
                     <div key={index}>
                         <CommentContainer>
                             <Comment
+                                id={comment.id}
                                 name={comment.name}
                                 created={parseCreatedDate(comment.created)}
                                 comment={comment.comment}
