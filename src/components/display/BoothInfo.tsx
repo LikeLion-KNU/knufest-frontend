@@ -45,14 +45,15 @@ const BoothInfo: React.FC = () => {
             threshold: 0.5,
         });
 
-        slideRefs.current.forEach((slide) => {
+        const currentSlideRefs = slideRefs.current;
+        currentSlideRefs.forEach((slide) => {
             if (slide) {
                 observer.observe(slide);
             }
         });
 
         return () => {
-            slideRefs.current.forEach((slide) => {
+            currentSlideRefs.forEach((slide) => {
                 if (slide) {
                     observer.unobserve(slide);
                 }

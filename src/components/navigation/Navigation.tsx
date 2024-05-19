@@ -43,7 +43,7 @@ const Navigation: React.FC = () => {
     return (
         <StyledNav>
             <NavHeader>
-                <Hapuruna src={HapurunaIcon} width={60} onClick={() => navigate("/")} />
+                <Hapuruna src={HapurunaIcon} width={80} onClick={() => navigate("/")} />
                 <MenuIcon onClick={() => setShow(!show)}>
                     <MenuBar />
                     <MenuBar />
