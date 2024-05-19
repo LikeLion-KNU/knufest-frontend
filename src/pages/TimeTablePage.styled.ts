@@ -25,6 +25,7 @@ export const LocationWrapper = styled.div`
     justify-content: center;
     gap: 10px;
     margin: 30px 0;
+    flex-wrap: wrap;
 `;
 
 export const LocationButton = styled.button<{ onClick?: () => void }>`
