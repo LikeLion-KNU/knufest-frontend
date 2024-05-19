@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const ImgContainer = styled.div`
     margin: 0 auto;
+
+    width: 100%;
+    aspect-ratio: 1/1;
 `;
 
 export const ImgWrapper = styled.div`
@@ -26,6 +29,7 @@ export const ImgWrapper = styled.div`
 
 export const BoothImg = styled.img`
     width: 100%;
+    aspect-ratio: 1/1;
     scroll-snap-align: center;
     flex-shrink: 0;
     object-fit: cover;

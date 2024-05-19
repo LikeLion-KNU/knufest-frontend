@@ -59,6 +59,7 @@ const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
 
             <InfoWrapper>
                 <Booth
+                    isNavigatable={false}
                     index={boothDetail.boothnum}
                     name={boothDetail.boothName}
                     num={boothDetail.likes}

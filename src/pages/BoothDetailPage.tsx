@@ -3,6 +3,7 @@ import React from "react";
 import BoothInfo from "@/components/display/BoothInfo";
 import CommentInfo from "@/components/display/CommentInfo";
 import { Loader } from "@/components/feedback/Loader";
+import { Paragraph } from "@/components/typography/Paragraph";
 
 import { DetailPageWrapper, SubBtn, ContentContainer, SendImg, BottomBox } from "@/pages/BoothDetailPage.styled";
 
@@ -18,6 +19,11 @@ export default function BoothDetailPage() {
     return (
         <DetailPageWrapper>
             {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} />}
+
+            <Paragraph size="m" weight="normal">
+                {boothDetail?.boothDescription}
+            </Paragraph>
+
             {isCommentFetchPending ? <Loader /> : comments && <CommentInfo commentsDetail={comments} />}
 
             <BottomBox>

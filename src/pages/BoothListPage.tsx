@@ -46,6 +46,7 @@ const BoothListPage: React.FC = () => {
                     boothList.map((booth) => {
                         return (
                             <Booth
+                                isNavigatable={true}
                                 index={booth.boothnum}
                                 name={booth.boothName}
                                 num={booth.likes}
