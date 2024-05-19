@@ -24,7 +24,7 @@ export const LocationWrapper = styled.div`
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 30px 0;
+    margin: 30px 20px;
     flex-wrap: wrap;
 `;
 
