@@ -17,10 +17,14 @@ export const CommentList = styled.div`
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 95%;
+    width: 90%;
     div > hr {
         margin-top: 38px;
         border: 1px solid #dddddd;
+    }
+
+    div:last-child > div + hr {
+        display: none;
     }
 `;
 
