@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledNav = styled.nav`
+export const StyledNav = styled.nav<{ isHomePage: boolean }>`
     width: min(100%, 700px);
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 
-    background: rgba(255, 255, 255, 0.4);
+    background: ${({ isHomePage }) => (isHomePage ? "rgba(255, 255, 255, 0.4)" : "rgba(184, 184, 242, 0.5)")};
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: white;
