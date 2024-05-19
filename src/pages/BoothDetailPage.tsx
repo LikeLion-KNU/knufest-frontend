@@ -44,13 +44,15 @@ export default function BoothDetailPage() {
         <DetailPageWrapper>
             {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} />}
 
-            {boothDetail?.boothDescription.split("<br/>").map((detail) => {
-                return (
-                    <Paragraph size="m" weight="normal">
-                        {detail}
-                    </Paragraph>
-                );
-            })}
+            {boothDetail?.boothDescription.includes("<br/>")
+                ? boothDetail?.boothDescription.split("<br/>").map((detail) => {
+                      return (
+                          <Paragraph size="m" weight="normal">
+                              {detail}
+                          </Paragraph>
+                      );
+                  })
+                : boothDetail?.boothDescription}
 
             <CommentHeader>
                 <Text size="20px" weight="bold">
