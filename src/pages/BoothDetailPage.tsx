@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 import BoothInfo from "@/components/display/BoothInfo";
 import { Comment } from "@/components/display/Comment";
@@ -18,8 +19,12 @@ import sendImg from "@/assets/send.png";
 
 import { parseCreatedDate } from "@/utils/parseCreatedDate";
 
+import { CommentHeader } from "./BoothListPage.styled";
+import { ScrollTopButton } from "./TimeTablePage.styled";
+
 export default function BoothDetailPage() {
     const { isPending, boothDetail } = useBoothDetail();
+
     const {
         isPending: isCommentFetchPending,
         comments,
@@ -27,6 +32,13 @@ export default function BoothDetailPage() {
         handleCommentSubmit,
         handleCommentDelete,
     } = useComment();
+
+    const handleScrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
 
     return (
         <DetailPageWrapper>
@@ -36,14 +48,16 @@ export default function BoothDetailPage() {
                 {boothDetail?.boothDescription}
             </Paragraph>
 
-            <Text size="20px" weight="bold">
-                <Title>
-                    댓글
-                    <Text size="m" weight="bold" variant="#3F3A6C">
-                        {0}
-                    </Text>
-                </Title>
-            </Text>
+            <CommentHeader>
+                <Text size="20px" weight="bold">
+                    <Title>
+                        댓글
+                        <Text size="m" weight="bold" variant="#3F3A6C">
+                            {0}
+                        </Text>
+                    </Title>
+                </Text>
+            </CommentHeader>
 
             {isCommentFetchPending ? (
                 <Loader />
@@ -88,6 +102,10 @@ export default function BoothDetailPage() {
                     </SubBtn>
                 </ContentContainer>
             </BottomBox>
+
+            <ScrollTopButton onClick={handleScrollToTop}>
+                <AiOutlineArrowUp size={24} />
+            </ScrollTopButton>
         </DetailPageWrapper>
     );
 }

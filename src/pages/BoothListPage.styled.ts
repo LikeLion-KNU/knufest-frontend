@@ -25,3 +25,11 @@ export const VisibleList = styled(motion.ul)`
     width: 90%;
     list-style: none;
 `;
+
+export const CommentHeader = styled.div`
+    width: 100%;
+    margin: 10px 0px;
+
+    display: flex;
+    justify-content: center;
+`;
