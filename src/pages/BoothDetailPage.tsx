@@ -7,6 +7,7 @@ import { CommentList } from "@/components/display/CommentInfo.styled";
 import { CommentContainer } from "@/components/display/CommentInfo.styled";
 import { Title } from "@/components/display/CommentInfo.styled";
 import { Loader } from "@/components/feedback/Loader";
+import { Pagination } from "@/components/navigation/Pagination";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
@@ -108,6 +109,8 @@ export default function BoothDetailPage() {
                     </SubBtn>
                 </ContentContainer>
             </BottomBox>
+
+            <Pagination></Pagination>
 
             <ScrollTopButton onClick={handleScrollToTop}>
                 <AiOutlineArrowUp size={24} />
