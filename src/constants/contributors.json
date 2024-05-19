@@ -4,7 +4,7 @@
         "dept": "컴퓨터학부 20",
         "role": "멋쟁이사자처럼 12기 회장",
         "photo": "daegun",
-        "description": ["지도 페이지 개발", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["축제 지도 제작", "부스 리스트 페이지 구현", "부스 상세 페이지 구현"],
         "contact": {
             "instagram": "toothless.kid",
             "github": "toothlessdev"
@@ -16,7 +16,7 @@
         "dept": "컴퓨터학부 21",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "hyoeun",
-        "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["웹 페이지 디자인", "부스 상세 페이지 구현", "Special Guest 페이지 구현"],
         "contact": {
             "instagram": "hyon__er",
             "github": "Hyoeunkh"
@@ -28,7 +28,7 @@
         "dept": "컴퓨터학부 19",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "dongpil",
-        "description": ["웹 페이지 디자인", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["웹 페이지 디자인", "부스 상세 페이지 구현"],
         "contact": {
             "instagram": "j0_dph",
             "github": "eastfilmm"
@@ -40,7 +40,7 @@
         "dept": "컴퓨터학부 21",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "junhyeok",
-        "description": ["메인 페이지 개발", "만든이들 페이지 개발 2", "웹 페이지 디자인"],
+        "description": ["메인 페이지 개발", "만든이들 페이지 개발", "웹 페이지 디자인"],
         "contact": {
             "instagram": "junyeokk_",
             "linkedin": "junhyeokchae",
@@ -53,7 +53,7 @@
         "dept": "컴퓨터학부 20",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "donggun",
-        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["DB 구축 및 관리", "개발 및 운영", "서버 배포"],
         "contact": {
             "instagram": "thismovinggun",
             "github": "himodu"
@@ -65,7 +65,7 @@
         "dept": "컴퓨터학부 19",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "jiwoong",
-        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["정보 수집 및 제공", "데이터 설계"],
         "contact": {
             "instagram": "dnd._.hihi",
             "github": "wldnd2"
@@ -77,7 +77,7 @@
         "dept": "컴퓨터학부 20",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "jeongsik",
-        "description": ["기여한 부분 1", "기여한 부분 2", "기여한 부분 3"],
+        "description": ["DB 구축 및 관리", "개발 및 운영", "홍보 포스터 작성"],
         "contact": {
             "instagram": "siksik__choi",
             "github": "siksik-Choi"
