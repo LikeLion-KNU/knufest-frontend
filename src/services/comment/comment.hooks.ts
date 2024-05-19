@@ -43,3 +43,21 @@ export const useComment = () => {
 
     return { isPending, comments, handleCommentSubmit, commentInputRef };
 };
+
+export const useDeleteable = (commentId: number) => {
+    const { visitorId } = useVisitor();
+    const [refetch, setRefetch] = useState<boolean>(false);
+
+    const handleDeleteBtnClick = useCallback(() => {
+        if (!visitorId) return;
+
+        if(window.confirm("삭제하시겠습니까?")) {
+            commentService.deleteComment(visitorId as string, commentId as number).then(() => {
+                setRefetch((refetch) => !refetch);
+                alert("삭제되었습니다.");
+            });
+        }
+    }, [visitorId, commentId, refetch]);
+
+    return { handleDeleteBtnClick };
+};
