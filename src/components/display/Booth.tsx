@@ -34,7 +34,7 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category, 
                     {name}
                 </Text>
             </BoothLink>
-            <Heart num={likeAble ? num : num - 1} likable={likeAble} onClick={handleLikeBtnClick} />
+            <Heart num={likeAble ? num + 1 : num} likable={likeAble} onClick={handleLikeBtnClick} />
         </BoothListItem>
     );
 };
