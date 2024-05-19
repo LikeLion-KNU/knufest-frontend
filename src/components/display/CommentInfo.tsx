@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Pagination } from "@/components/navigation/Pagination";
 
@@ -15,17 +15,10 @@ interface CommentInfoProps {
 }
 
 const CommentInfo: React.FC<CommentInfoProps> = ({ commentsDetail }) => {
-    const [commentnum] = useState<number>(commentsDetail.length);
-
     return (
         <CommentWrapper>
             <Text size="20px" weight="bold">
-                <Title>
-                    댓글
-                    <Text size="m" weight="bold" variant="#3F3A6C">
-                        {commentnum}
-                    </Text>
-                </Title>
+                <Title>댓글</Title>
             </Text>
             <CommentList>
                 {commentsDetail.map((comment, index) => (
