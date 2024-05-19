@@ -22,7 +22,7 @@ export const MainLayout = () => {
 
     return (
         <>
-            <Navigation isHomePage={isHomePage} />
+            <Navigation />
             <Main isHomePage={isHomePage}>
                 <MainContent isHomePage={isHomePage}>
                     <Outlet />
