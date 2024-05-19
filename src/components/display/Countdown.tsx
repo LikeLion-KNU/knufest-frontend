@@ -9,12 +9,18 @@ interface ICountdown {
     targetDate: Date;
     onCountdownEnd: () => void;
     endDate: Date;
+    onFestivalEnd: () => void;
 }
 
-export const Countdown: React.FC<ICountdown> = ({ targetDate, onCountdownEnd, endDate }) => {
+export const Countdown: React.FC<ICountdown> = ({ targetDate, onCountdownEnd, endDate, onFestivalEnd }) => {
     const displayTime = useCountdown(targetDate);
     const displayEndTime = useCountdown(endDate);
-    const isCountdownFinished = useFestivalCountdown(targetDate, onCountdownEnd);
+    const { isCountdownFinished, isFestivalOver } = useFestivalCountdown(
+        targetDate,
+        endDate,
+        onCountdownEnd,
+        onFestivalEnd,
+    );
 
     const dateOptions: Intl.DateTimeFormatOptions = {
         year: "numeric",
@@ -29,7 +35,11 @@ export const Countdown: React.FC<ICountdown> = ({ targetDate, onCountdownEnd, en
 
     return (
         <CountdownContainer>
-            {isCountdownFinished ? (
+            {isFestivalOver ? (
+                <Text size="m" weight="bold" variant="darkpurple">
+                    2024년 축제가 종료되었습니다. <br /> 다음 대동제를 기대해주세요!
+                </Text>
+            ) : isCountdownFinished ? (
                 <>
                     <Text size="m" weight="bold" variant="darkpurple">
                         대동제가 끝나기까지 남은 시간

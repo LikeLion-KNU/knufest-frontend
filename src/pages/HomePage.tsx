@@ -11,6 +11,7 @@ import mainPageImage from "@/assets/main_page.jpg";
 
 export default function HomePage() {
     const [isCountdownFinished, setIsCountdownFinished] = useState(false);
+    const [isFestivalOver, setIsFestivalOver] = useState(false);
     const quickAccessRef = useRef<HTMLDivElement>(null);
 
     const scrollToQuickAccess = () => {
@@ -19,6 +20,9 @@ export default function HomePage() {
 
     const festivalStartDate = new Date("2024-05-21T00:00:00");
     const festivalEndDate = new Date("2024-05-23T22:40:00");
+
+    // const festivalStartDate = new Date(new Date().getTime() + 5000); // test
+    // const festivalEndDate = new Date(new Date().getTime() + 10000); // test
 
     return (
         <>
@@ -34,13 +38,17 @@ export default function HomePage() {
             {/* 카운트다운 */}
             <ElementContainer>
                 <Text size="l" weight="bold" variant="darkpurple">
-                    {isCountdownFinished ? "축제가 진행중입니다!" : "대동제가 곧 시작됩니다"}
+                    {isFestivalOver
+                        ? "축제가 종료되었습니다."
+                        : isCountdownFinished
+                          ? "축제가 진행중입니다!"
+                          : "대동제가 곧 시작됩니다"}
                 </Text>
                 <Countdown
                     targetDate={festivalStartDate}
-                    // targetDate={new Date(new Date().getTime() + 5000)} // Test
                     onCountdownEnd={() => setIsCountdownFinished(true)}
                     endDate={festivalEndDate}
+                    onFestivalEnd={() => setIsFestivalOver(true)}
                 />
             </ElementContainer>
 
