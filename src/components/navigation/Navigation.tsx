@@ -32,11 +32,7 @@ const itemVariants: Variants = {
     closed: { opacity: 0, y: -20 },
 };
 
-interface NavigationProps {
-    isHomePage: boolean;
-}
-
-const Navigation: React.FC<NavigationProps> = ({ isHomePage }) => {
+const Navigation: React.FC = () => {
     const [show, setShow] = useState(false);
     const navigate = useNavigate();
     const handleNavLinkClick = (path: string) => {
@@ -45,7 +41,7 @@ const Navigation: React.FC<NavigationProps> = ({ isHomePage }) => {
     };
 
     return (
-        <StyledNav isHomePage={isHomePage}>
+        <StyledNav>
             <NavHeader>
                 <Hapuruna src={HapurunaIcon} width={80} onClick={() => navigate("/")} />
                 <MenuIcon onClick={() => setShow(!show)}>

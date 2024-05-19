@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const StyledNav = styled.nav<{ isHomePage: boolean }>`
+export const StyledNav = styled.nav`
     width: min(100%, 700px);
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
 
-    background: ${({ isHomePage }) => (isHomePage ? "rgba(255, 255, 255, 0.4)" : "rgba(184, 184, 242, 0.5)")};
+    background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: white;
@@ -52,14 +52,16 @@ export const MenuIcon = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 22px;
+    height: 24px;
 `;
 
 export const MenuBar = styled.span`
     display: block;
-    height: 3px;
+    height: 4px;
     width: 100%;
-    background-color: black;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 `;
 
 export const NavItem = styled(motion.li)`
