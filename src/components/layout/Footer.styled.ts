@@ -14,8 +14,20 @@ export const TopBorder = styled.div`
     margin: 0 auto 50px;
 `;
 
+export const LogoWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+`;
+
 export const Logo = styled.img`
     width: 100px;
+    height: auto;
+`;
+
+export const LogoLikeLion = styled.img`
+    width: 150px;
     height: auto;
 `;
 
