@@ -27,7 +27,7 @@ export const useComment = () => {
                     visitorId as string,
                 );
                 setComments((prevComments) => [...prevComments, ...data.data]);
-                setHasMore(data.data.length > 0); // 더 가져올 댓글이 있는지 확인
+                setHasMore(data.data.length > 0);
             } catch (error) {
                 console.error("Failed to load comments", error);
             }
@@ -48,9 +48,9 @@ export const useComment = () => {
                 visitorId as string,
                 content,
             );
-            setPage(1); // 댓글을 추가한 후 첫 페이지로 돌아가서 새로고침
-            setComments([]); // 기존 댓글을 초기화하여 새로 불러오도록 함
-            fetchMoreComments(1); // 첫 페이지의 댓글을 다시 불러옴
+            setPage(1);
+            setComments([]);
+            fetchMoreComments(1);
         },
         [category, boothId, visitorId, fetchMoreComments],
     );
