@@ -62,8 +62,9 @@ const BoothListPage: React.FC = () => {
                     boothList
                         .filter((booth) => {
                             return (
-                                (booth.boothnum === parseInt(input) || booth.boothName.includes(input)) &&
-                                (!booth.host || booth.host.includes(input))
+                                booth.boothnum === parseInt(input) ||
+                                booth.boothName.includes(input) ||
+                                (booth.host && booth.host.includes(input))
                             );
                         })
                         .map((booth) => {
