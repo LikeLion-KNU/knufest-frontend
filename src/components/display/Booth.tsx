@@ -10,6 +10,7 @@ import { Heart } from "./Heart";
 export interface IBooth {
     index: number;
     name: string;
+    host: string;
     num: number;
     likeable: boolean;
     category: string;
@@ -20,7 +21,7 @@ const itemVariants: Variants = {
     visible: { opacity: 1, y: 0 },
 };
 
-export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category, isNavigatable }) => {
+export const Booth: React.FC<IBooth> = ({ index, host, name, num, likeable, category, isNavigatable }) => {
     const { likeable: likeAble, handleLikeBtnClick } = useLikes(likeable, category, index);
 
     return (
@@ -31,7 +32,14 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category, 
             <BoothLink to={isNavigatable ? `/booth/${category}/${index}` : ""}>
                 {isNavigatable && <Index category={category}>{category !== "it" ? index : `IT-${index}`}</Index>}
                 <Text size="m" weight="bold" variant="#5D5A88">
-                    {name}
+                    { host && 
+                        <Text size="xs" weight="bold" variant="#5D5A88">
+                            {`[ ${host} ]`}
+                        </Text>
+                    }
+                    <Text size="m" weight="bold" variant="#5D5A88">
+                        {name}
+                    </Text>
                 </Text>
             </BoothLink>
             <Heart num={likeAble ? num + 1 : num} likable={likeAble} onClick={handleLikeBtnClick} />

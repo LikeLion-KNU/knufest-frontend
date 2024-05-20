@@ -1,6 +1,7 @@
 export interface IBoothItem {
     id: number;
     boothName: string;
+    host: string;
     likes: number;
     categori: string;
     boothnum: number;
@@ -15,6 +16,7 @@ export interface IReadAllBoothResponse {
 export interface IReadBoothByIdResponse {
     id: number;
     boothName: string;
+    host: string;
     likes: number;
     categori: string;
     boothnum: number;

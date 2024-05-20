@@ -61,7 +61,8 @@ const BoothListPage: React.FC = () => {
                     boothList &&
                     boothList
                         .filter((booth) => {
-                            return booth.boothnum === parseInt(input) || booth.boothName.includes(input);
+                            return (booth.boothnum === parseInt(input) || booth.boothName.includes(input)) &&
+                            (!booth.host || booth.host.includes(input))
                         })
                         .map((booth) => {
                             return (
@@ -69,6 +70,7 @@ const BoothListPage: React.FC = () => {
                                     isNavigatable={true}
                                     index={booth.boothnum}
                                     name={booth.boothName}
+                                    host={booth.host}
                                     num={booth.likes}
                                     likeable={!booth.likable}
                                     category={booth.categori}

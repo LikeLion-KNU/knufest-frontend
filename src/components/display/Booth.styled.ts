@@ -25,11 +25,12 @@ export const BoothLink = styled(Link)`
 
     span {
         display: flex;
-        align-items: center;
+        flex-direction: column;
 
         width: 100%;
 
-        padding-left: 20px;
+        padding-left: 10px;
+        gap: 1px;
     }
 `;
 
