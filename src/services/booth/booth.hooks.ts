@@ -54,7 +54,7 @@ export const useBoothDetail = () => {
 
     useEffect(() => {
         if (!visitorId) return;
-        
+
         setIsPending(true);
         boothService
             .readBoothById(category as string, parseInt(boothId as string), visitorId as string)
