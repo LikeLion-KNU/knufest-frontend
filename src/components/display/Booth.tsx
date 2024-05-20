@@ -32,11 +32,11 @@ export const Booth: React.FC<IBooth> = ({ index, host, name, num, likeable, cate
             <BoothLink to={isNavigatable ? `/booth/${category}/${index}` : ""}>
                 {isNavigatable && <Index category={category}>{category !== "it" ? index : `IT-${index}`}</Index>}
                 <Text size="m" weight="bold" variant="#5D5A88">
-                    { host && 
+                    {host && (
                         <Text size="xs" weight="bold" variant="#5D5A88">
                             {`[ ${host} ]`}
                         </Text>
-                    }
+                    )}
                     <Text size="m" weight="bold" variant="#5D5A88">
                         {name}
                     </Text>
