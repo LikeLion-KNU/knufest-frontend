@@ -11,6 +11,8 @@ export const DetailPageWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    word-break: keep-all;
+
     p {
         width: 90%;
     }
@@ -77,4 +79,19 @@ export const SubBtn = styled.button`
 
 export const SendImg = styled.img`
     width: 50%;
+`;
+
+export const ScrollTopButton = styled.button`
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #5d5a88;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;

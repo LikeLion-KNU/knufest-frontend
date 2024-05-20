@@ -30,9 +30,12 @@ export const VisibleList = styled(motion.ul)`
 `;
 
 export const CommentHeader = styled.div`
-    width: 100%;
+    width: 90%;
     margin: 10px 0px;
     margin-bottom: 30px;
+    padding: 10px 0px;
+    padding-top: 30px;
+    border-top: 2px solid #ddd;
 
     display: flex;
     justify-content: center;

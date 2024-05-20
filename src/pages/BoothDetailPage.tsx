@@ -7,10 +7,12 @@ import { CommentList } from "@/components/display/CommentInfo.styled";
 import { CommentContainer } from "@/components/display/CommentInfo.styled";
 import { Title } from "@/components/display/CommentInfo.styled";
 import { Loader } from "@/components/feedback/Loader";
+import { Pagination } from "@/components/navigation/Pagination";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
 import { DetailPageWrapper, SubBtn, ContentContainer, SendImg, BottomBox } from "@/pages/BoothDetailPage.styled";
+import { ScrollTopButton } from "@/pages/BoothDetailPage.styled";
 
 import { useBoothDetail } from "@/services/booth/booth.hooks";
 import { useComment } from "@/services/comment/comment.hooks";
@@ -20,7 +22,6 @@ import sendImg from "@/assets/send.png";
 import { parseCreatedDate } from "@/utils/parseCreatedDate";
 
 import { CommentHeader } from "./BoothListPage.styled";
-import { ScrollTopButton } from "./TimeTablePage.styled";
 
 export default function BoothDetailPage() {
     const { isPending, boothDetail } = useBoothDetail();
@@ -56,12 +57,7 @@ export default function BoothDetailPage() {
 
             <CommentHeader>
                 <Text size="20px" weight="bold">
-                    <Title>
-                        댓글
-                        <Text size="m" weight="bold" variant="#3F3A6C">
-                            {0}
-                        </Text>
-                    </Title>
+                    <Title>댓글</Title>
                 </Text>
             </CommentHeader>
 
@@ -108,6 +104,8 @@ export default function BoothDetailPage() {
                     </SubBtn>
                 </ContentContainer>
             </BottomBox>
+
+            <Pagination></Pagination>
 
             <ScrollTopButton onClick={handleScrollToTop}>
                 <AiOutlineArrowUp size={24} />
