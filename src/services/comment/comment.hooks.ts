@@ -27,6 +27,7 @@ export const useComment = () => {
         (content: string) => {
             commentService.createComment(category as string, parseInt(boothId as string), visitorId as string, content);
             setRefetch(true);
+            alert("댓글이 등록되었습니다!");
         },
         [category, boothId, visitorId],
     );
