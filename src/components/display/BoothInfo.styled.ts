@@ -32,7 +32,7 @@ export const BoothImg = styled.img`
     aspect-ratio: 1/1;
     scroll-snap-align: center;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 50% 50%;
     border-radius: 20px;
 `;
