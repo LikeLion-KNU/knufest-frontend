@@ -62,6 +62,7 @@ const BoothInfo: React.FC<BoothInfoProps> = ({ boothDetail }) => {
                     isNavigatable={false}
                     index={boothDetail.boothnum}
                     name={boothDetail.boothName}
+                    host={boothDetail.host}
                     num={boothDetail.likes}
                     likeable={!boothDetail.likable}
                     category={boothDetail.categori}
