@@ -1,10 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import { useVisitor } from "@/hooks/useVisitor";
 
 import { boothService } from "./booth.service";
 import { IBoothItem, IReadBoothByIdResponse } from "./booth.types";
+import { pageActions } from "@/store/page.slice";
+import { Dispatch } from "@reduxjs/toolkit";
 
 export const useAllBooth = () => {
     const [isPending, setIsPending] = useState<boolean>(false);
@@ -46,6 +49,8 @@ export const useLikes = (initLikeable: boolean, category: string, boothId: numbe
 };
 
 export const useBoothDetail = () => {
+    const dispatch: Dispatch = useDispatch();
+
     const { category, boothId } = useParams();
     const { visitorId } = useVisitor();
 
@@ -57,12 +62,13 @@ export const useBoothDetail = () => {
         boothService
             .readBoothById(category as string, parseInt(boothId as string), visitorId as string)
             .then((data) => {
+                dispatch(pageActions.setMaxPage(Math.ceil(data.commentCount / 20)));
                 setBoothDetail(data);
             })
             .finally(() => {
                 setIsPending(false);
             });
-    }, [category, boothId, visitorId]);
+    }, [category, boothId, visitorId, dispatch]);
 
     return { isPending, boothDetail };
 };

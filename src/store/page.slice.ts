@@ -11,7 +11,7 @@ const initialState: IPageState = {
     currentPage: 1,
     page: 1,
     perPage: 5,
-    maxPage: 20,
+    maxPage: 0,
 };
 
 export const pageSlice = createSlice({

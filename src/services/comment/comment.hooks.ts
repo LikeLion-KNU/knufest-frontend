@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import { useVisitor } from "@/hooks/useVisitor";
@@ -7,8 +7,11 @@ import { useVisitor } from "@/hooks/useVisitor";
 import { commentService } from "./comment.service";
 import { IComment } from "./comment.types";
 import { RootState } from "@/store/store";
+import { Dispatch } from "@reduxjs/toolkit";
 
 export const useComment = () => {
+    const dispatch: Dispatch = useDispatch();
+
     const commentInputRef = useRef<HTMLInputElement>(null);
 
     const { visitorId } = useVisitor();
@@ -51,7 +54,7 @@ export const useComment = () => {
                 setIsPending(false);
                 setRefetch(false);
             });
-    }, [category, currentPage, visitorId, boothId, refetch]);
+    }, [category, currentPage, visitorId, boothId, refetch, dispatch]);
 
     return { isPending, comments, handleCommentSubmit, handleCommentDelete, commentInputRef };
 };
