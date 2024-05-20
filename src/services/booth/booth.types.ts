@@ -20,5 +20,5 @@ export interface IReadBoothByIdResponse {
     boothnum: number;
     urls: string[];
     likable: boolean;
-    boothDescription: string;
+    boothDescription?: string;
 }

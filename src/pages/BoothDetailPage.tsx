@@ -42,9 +42,9 @@ export default function BoothDetailPage() {
 
     return (
         <DetailPageWrapper>
-            {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} />}
-
-            {boothDetail?.boothDescription.split("<br/>").map((detail) => {
+            {isPending ? <Loader /> : boothDetail && <BoothInfo boothDetail={boothDetail} /> }
+            
+            {(boothDetail?.boothDescription!=null?boothDetail.boothDescription:'').split("<br/>").map((detail) => {
                 return (
                     <Paragraph size="m" weight="normal">
                         {detail}
