@@ -26,7 +26,16 @@ export const Booth: React.FC<IBooth> = ({ index, name, num, likeable, category, 
     return (
         <BoothListItem
             variants={itemVariants}
-            style={{ backgroundColor: category === "pub" ? "#e9e9fb" : category === "comp" ? "#daf1e5" : "#dfe7ff" }}
+            style={{
+                backgroundColor:
+                    category === "pub"
+                        ? "#e9e9fb"
+                        : category === "comp"
+                          ? "#daf1e5"
+                          : category === "it"
+                            ? "#e9e9fb"
+                            : "#dfe7ff",
+            }}
         >
             <BoothLink to={isNavigatable ? `/booth/${category}/${index}` : ""}>
                 {isNavigatable && <Index category={category}>{category !== "it" ? index : `IT-${index}`}</Index>}
