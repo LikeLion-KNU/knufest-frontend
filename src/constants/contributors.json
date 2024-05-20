@@ -40,7 +40,7 @@
         "dept": "컴퓨터학부 21",
         "role": "멋쟁이사자처럼 12기 운영진",
         "photo": "junhyeok",
-        "description": ["메인 페이지 개발", "만든이들 페이지 개발", "웹 페이지 디자인"],
+        "description": ["메인 페이지 구현", "만든이들 페이지 구현", "타임테이블 페이지 구현", "웹 페이지 디자인"],
         "contact": {
             "instagram": "junyeokk_",
             "linkedin": "junhyeokchae",
