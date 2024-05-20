@@ -98,8 +98,8 @@ export default function BoothDetailPage() {
                         commentInputRef.current.value = "";
                     }}
                 >
-                    <input ref={commentInputRef} placeholder="댓글 기능이 현재 비활성화되었습니다." disabled />
-                    <SubBtn type="submit" disabled>
+                    <input ref={commentInputRef} placeholder="댓글을 입력해주세요!" />
+                    <SubBtn type="submit">
                         <SendImg src={sendImg} />
                     </SubBtn>
                 </ContentContainer>

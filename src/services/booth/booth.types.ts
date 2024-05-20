@@ -23,4 +23,5 @@ export interface IReadBoothByIdResponse {
     urls: string[];
     likable: boolean;
     boothDescription?: string;
+    commentCount: number;
 }

@@ -8,7 +8,7 @@ import { Dispatch } from "@reduxjs/toolkit";
 
 export const Pagination: React.FC = () => {
     const dispatch: Dispatch = useDispatch();
-    const { currentPage, page, perPage } = useSelector((state: RootState) => state.page);
+    const { currentPage, page, perPage, maxPage } = useSelector((state: RootState) => state.page);
 
     const handlePageBtnClick = useCallback(
         (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -29,11 +29,15 @@ export const Pagination: React.FC = () => {
         <PaginationContainer>
             <PageSkipButton onClick={handlePrevBtnClick}>{"<"}</PageSkipButton>
             {Array.from({ length: perPage }, (_, k) => page + k).map((page) => {
-                return (
-                    <PageButton active={page === currentPage} onClick={handlePageBtnClick}>
-                        {page}
-                    </PageButton>
-                );
+                if (page <= maxPage) {
+                    return (
+                        <PageButton active={page === currentPage} onClick={handlePageBtnClick}>
+                            {page}
+                        </PageButton>
+                    );
+                } else {
+                    return <></>;
+                }
             })}
             <PageSkipButton onClick={handleNextBtnClick}>{">"}</PageSkipButton>
         </PaginationContainer>

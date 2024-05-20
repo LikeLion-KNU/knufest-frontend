@@ -1,4 +1,5 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
 import { Variants } from "framer-motion";
@@ -12,6 +13,8 @@ import { Text } from "@/components/typography/Text";
 import { useAllBooth } from "@/services/booth/booth.hooks";
 
 import { BoothSearchInput, VisibleList } from "./BoothListPage.styled";
+import { pageActions } from "@/store/page.slice";
+import { Dispatch } from "@reduxjs/toolkit";
 
 const listVariants: Variants = {
     hidden: {
@@ -34,6 +37,13 @@ const BoothListPage: React.FC = () => {
     }, []);
 
     const { isPending, boothList } = useAllBooth();
+
+    const dispatch: Dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(pageActions.setPage(1));
+    }, [dispatch]);
+
     return (
         <>
             <Paragraph size="m" weight="bold" variant="darkpurple">
