@@ -1,8 +1,10 @@
 import { FaRegBell } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
 import { GoPeople } from "react-icons/go";
 import { IoMapOutline } from "react-icons/io5";
 import { LuCalendarDays } from "react-icons/lu";
 import { PiMicrophoneStage } from "react-icons/pi";
+import { RiKakaoTalkFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/forms/Button";
@@ -52,6 +54,30 @@ export const ButtonList = () => {
                     <FaRegBell size={22} style={{ marginRight: "10px" }} />
                     <Text size="m" weight="bold" variant="white">
                         총학 Hotline
+                    </Text>
+                </div>
+            </Button>
+
+            {/* 총학 linktree */}
+            <Button width="auto" variant="neon" onClick={() => window.open("https://linktr.ee/knuch2024", "_blank")}>
+                <div>
+                    <FaLink size={22} style={{ marginRight: "10px", color: "black" }} />
+                    <Text size="m" weight="bold" variant="black">
+                        총학 linktree
+                    </Text>
+                </div>
+            </Button>
+
+            {/* 개발진 문의 - 카카오톡 오픈채팅방 */}
+            <Button
+                width="auto"
+                variant="kakaoyellow"
+                onClick={() => window.open("https://open.kakao.com/o/gI1H2nsg", "_blank")}
+            >
+                <div>
+                    <RiKakaoTalkFill size={22} style={{ marginRight: "10px", color: "black" }} />
+                    <Text size="s" weight="bold" variant="black">
+                        개발진 문의 - 카카오톡 오픈채팅방
                     </Text>
                 </div>
             </Button>
