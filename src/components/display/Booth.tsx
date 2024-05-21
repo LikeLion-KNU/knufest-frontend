@@ -22,8 +22,7 @@ const itemVariants: Variants = {
 };
 
 export const Booth: React.FC<IBooth> = ({ index, host, name, num, likeable, category, isNavigatable }) => {
-    const { likeable: likeAble, handleLikeBtnClick } = useLikes(likeable, category, index);
-
+    const { likeable: likeAble, handleLikeBtnClick, likenum } = useLikes(likeable, num, category, index);
     return (
         <BoothListItem
             variants={itemVariants}
@@ -39,7 +38,11 @@ export const Booth: React.FC<IBooth> = ({ index, host, name, num, likeable, cate
             }}
         >
             <BoothLink to={isNavigatable ? `/booth/${category}/${index}` : ""}>
-                {isNavigatable && <Index category={category}>{category !== "it" ? index : `IT-${index}`}</Index>}
+                {isNavigatable && (
+                    <Index category={category}>
+                        {category !== "it" ? index : index === 8 ? "IT-5" : `IT-${index}`}
+                    </Index>
+                )}
                 <Text size="m" weight="bold" variant="#5D5A88">
                     {host && (
                         <Text size="xs" weight="bold" variant="#5D5A88">
@@ -51,7 +54,7 @@ export const Booth: React.FC<IBooth> = ({ index, host, name, num, likeable, cate
                     </Text>
                 </Text>
             </BoothLink>
-            <Heart num={likeAble ? num + 1 : num} likable={likeAble} onClick={handleLikeBtnClick} />
+            <Heart num={likenum.likeNum} likable={likeAble} onClick={handleLikeBtnClick} />
         </BoothListItem>
     );
 };

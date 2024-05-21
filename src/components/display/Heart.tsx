@@ -8,6 +8,8 @@ export interface IHeart extends React.ComponentProps<"div"> {
 }
 
 export const Heart: React.FC<IHeart> = ({ num, likable, ...rest }) => {
+    console.log(num);
+    console.log(likable);
     return (
         <HeartWrapper likeable={likable} {...rest}>
             <TiHeartFullOutline size={24} />

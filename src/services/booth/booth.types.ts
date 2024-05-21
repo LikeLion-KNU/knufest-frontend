@@ -1,5 +1,4 @@
 export interface IBoothItem {
-    id: number;
     boothName: string;
     host: string;
     likes: number;
@@ -24,4 +23,9 @@ export interface IReadBoothByIdResponse {
     likable: boolean;
     boothDescription?: string;
     commentCount: number;
+}
+
+export interface IUpdateLike {
+    likeNum: number;
+    message?: string;
 }
