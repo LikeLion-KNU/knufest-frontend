@@ -76,7 +76,7 @@ export const ButtonList = () => {
             >
                 <div>
                     <RiKakaoTalkFill size={22} style={{ marginRight: "10px", color: "black" }} />
-                    <Text size="s" weight="bold" variant="black">
+                    <Text size="xs" weight="bold" variant="black">
                         개발진 문의 - 카카오톡 오픈채팅방
                     </Text>
                 </div>
