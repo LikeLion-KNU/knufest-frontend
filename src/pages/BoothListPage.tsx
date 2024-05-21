@@ -62,7 +62,7 @@ const BoothListPage: React.FC = () => {
                 </TransformComponent>
             </TransformWrapper>
 
-            <BoothSearchInput placeholder="부스이름, 부스아이디로 검색해주세요!" onChange={handleChange} />
+            <BoothSearchInput placeholder="부스이름, 부스번호로 검색해주세요!" onChange={handleChange} />
 
             <VisibleList variants={listVariants} initial="hidden" animate="visible">
                 {isPending ? (

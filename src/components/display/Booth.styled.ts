@@ -29,7 +29,7 @@ export const BoothLink = styled(Link)`
 
         width: 100%;
 
-        padding-left: 10px;
+        padding-left: 8px;
         gap: 1px;
     }
 `;
