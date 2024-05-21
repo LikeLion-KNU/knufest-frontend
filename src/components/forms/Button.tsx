@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export interface IButton {
     width: string;
-    variant: "navy" | "purple" | "red";
+    variant: "navy" | "purple" | "red" | "neon" | "kakaoyellow";
 }
 
 export const Button = styled.button<IButton>`
@@ -24,6 +24,10 @@ export const Button = styled.button<IButton>`
                 return "#5D5A88";
             case "red":
                 return "#B04949";
+            case "neon":
+                return "#D2E823";
+            case "kakaoyellow":
+                return "#FEE500";
         }
     }};
 `;
