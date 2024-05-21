@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { useVisitor } from "@/hooks/useVisitor";
 
 import { boothService } from "./booth.service";
-import { IBoothItem, IReadBoothByIdResponse } from "./booth.types";
+import { IBoothItem, IReadBoothByIdResponse, IUpdateLike } from "./booth.types";
 import { pageActions } from "@/store/page.slice";
 import { Dispatch } from "@reduxjs/toolkit";
 
@@ -32,20 +32,21 @@ export const useAllBooth = () => {
     return { isPending, boothList };
 };
 
-export const useLikes = (initLikeable: boolean, category: string, boothId: number) => {
+export const useLikes = (initLikeable: boolean, num: number, category: string, boothId: number) => {
     const [likeable, setLikeable] = useState<boolean>(initLikeable);
-
+    const [likenum, setLikenum] = useState<IUpdateLike>({ likeNum: num });
     const { visitorId } = useVisitor();
 
     const handleLikeBtnClick = useCallback(() => {
         if (!visitorId) return;
 
-        boothService.updateLikesByBoothId(visitorId, category, boothId).then(() => {
+        boothService.updateLikesByBoothId(visitorId, category, boothId).then((data) => {
+            setLikenum(data.data);
             setLikeable((likeable) => !likeable);
         });
     }, [boothId, visitorId, category]);
 
-    return { likeable, handleLikeBtnClick };
+    return { likeable, handleLikeBtnClick, likenum };
 };
 
 export const useBoothDetail = () => {
@@ -58,9 +59,11 @@ export const useBoothDetail = () => {
     const [boothDetail, setBoothDetail] = useState<IReadBoothByIdResponse | null>(null);
 
     useEffect(() => {
+        if (!visitorId) return;
+
         setIsPending(true);
         boothService
-            .readBoothById(category as string, parseInt(boothId as string), visitorId as string)
+            .readBoothById(category as string, parseInt(boothId as string), visitorId)
             .then((data) => {
                 dispatch(pageActions.setMaxPage(Math.ceil(data.commentCount / 20)));
                 setBoothDetail(data);

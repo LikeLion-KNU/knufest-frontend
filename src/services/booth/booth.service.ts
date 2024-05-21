@@ -2,7 +2,7 @@ import { AxiosError } from "axios";
 
 import { HTTPException, api } from "@/config/api";
 
-import { IReadAllBoothResponse, IReadBoothByIdResponse } from "./booth.types";
+import { IReadAllBoothResponse, IReadBoothByIdResponse, IUpdateLike } from "./booth.types";
 
 export const boothService = {
     readAllBooth: async (userId: string | null) => {
@@ -35,7 +35,7 @@ export const boothService = {
 
     updateLikesByBoothId: async (userId: string, category: string, boothId: number) => {
         try {
-            const response = await api.patch(`/booth/${category}/${boothId}?userHash=${userId}`);
+            const response = await api.patch<IUpdateLike>(`/booth/${category}/${boothId}?userHash=${userId}`);
             return response;
         } catch (error) {
             if (error instanceof AxiosError) {
