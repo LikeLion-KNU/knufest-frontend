@@ -59,9 +59,11 @@ export const useBoothDetail = () => {
     const [boothDetail, setBoothDetail] = useState<IReadBoothByIdResponse | null>(null);
 
     useEffect(() => {
+        if (!visitorId) return;
+
         setIsPending(true);
         boothService
-            .readBoothById(category as string, parseInt(boothId as string), visitorId as string)
+            .readBoothById(category as string, parseInt(boothId as string), visitorId)
             .then((data) => {
                 dispatch(pageActions.setMaxPage(Math.ceil(data.commentCount / 20)));
                 setBoothDetail(data);
