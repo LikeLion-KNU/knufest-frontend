@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRef } from "react";
 import { BiSolidMap } from "react-icons/bi";
 
