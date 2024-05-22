@@ -8,6 +8,8 @@ import { TimeTableSection } from "@/components/display/TimeTableSection";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
+import { useActiveDate } from "@/hooks/useActiveDate";
+
 import tencmImg from "@/assets/10cm.jpg";
 import backImg from "@/assets/BackImg.png";
 import hahaImg from "@/assets/haha.webp";
@@ -27,7 +29,7 @@ import { getTimetableData, TimetableData } from "@/utils/timetableUtils";
 import { GuestCard, GuestContainer, BackImg, LocationWrapper } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
-    const [activeDate, setActiveDate] = useState<string>("5.21");
+    const [activeDate, setActiveDate] = useActiveDate("5.21");
     const timetableData = timetableDataJson as TimetableData;
     const currentTime = new Date();
 

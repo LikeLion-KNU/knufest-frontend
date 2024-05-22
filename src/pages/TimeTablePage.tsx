@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { BiSolidMap } from "react-icons/bi";
 
@@ -6,6 +6,8 @@ import DateSelector from "@/components/display/DateSelector";
 import { TimeTableSection } from "@/components/display/TimeTableSection";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
+
+import { useActiveDate } from "@/hooks/useActiveDate";
 
 import backImg from "@/assets/BackImg.png";
 
@@ -16,7 +18,7 @@ import { handleDateClick, getTimetableData, TimetableData } from "@/utils/timeta
 import { BackImg, DateWrapper, LocationWrapper, LocationButton, ScrollTopButton } from "./TimeTablePage.styled";
 
 const TimeTablePage: React.FC = () => {
-    const [activeDate, setActiveDate] = useState<string>("5.21");
+    const [activeDate, setActiveDate] = useActiveDate("5.21");
     const timetableData = timetableDataJson as TimetableData;
     const headerOffset = 100;
     const currentTime = new Date();
