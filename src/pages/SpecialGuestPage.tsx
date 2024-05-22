@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useRef } from "react";
 import { BiSolidMap } from "react-icons/bi";
 
 import DateSelector from "@/components/display/DateSelector";
 import { Guest } from "@/components/display/Guest";
+import { TimeTableSection } from "@/components/display/TimeTableSection";
 import { Paragraph } from "@/components/typography/Paragraph";
 import { Text } from "@/components/typography/Text";
 
@@ -18,11 +20,20 @@ import norazoImg from "@/assets/norazo.jpg";
 import paulblancoImg from "@/assets/paulblanco.avif";
 import qwerImg from "@/assets/qwer.webp";
 
+import timetableDataJson from "@/constants/timetable.json";
+
+import { getTimetableData, TimetableData } from "@/utils/timetableUtils";
+
 import { GuestCard, GuestContainer, BackImg, LocationWrapper } from "./SpecialGuestPage.styled";
 
 const SpecialGuestPage: React.FC = () => {
     const [activeDate, setActiveDate] = useState<string>("5.21");
+    const timetableData = timetableDataJson as TimetableData;
+    const currentTime = new Date();
 
+    const locationRefs = {
+        대운동장: useRef<HTMLDivElement>(null),
+    };
     const handleDateClick = (date: string) => {
         setActiveDate(date);
     };
@@ -76,6 +87,12 @@ const SpecialGuestPage: React.FC = () => {
                 </LocationWrapper>
                 <GuestCard>{renderGuests()}</GuestCard>
             </GuestContainer>
+            <TimeTableSection
+                title="대운동장"
+                data={getTimetableData(timetableData)(activeDate, "대운동장")}
+                locationRef={locationRefs["대운동장"]}
+                currentTime={currentTime}
+            />
         </>
     );
 };
