@@ -21,7 +21,7 @@ interface TimeTableSectionProps {
 
 export const TimeTableSection: React.FC<TimeTableSectionProps> = ({ title, data, locationRef, currentTime }) => {
     const isCurrentEvent = (eventTime: string): boolean => {
-        const [startTime, endTime] = eventTime.split(" ~ ").map((time) => new Date(`2024-05-22T${time}:00`));
+        const [startTime, endTime] = eventTime.split(" ~ ").map((time) => new Date(`2024-05-23T${time}:00`));
         return currentTime >= startTime && currentTime <= endTime;
     };
 
