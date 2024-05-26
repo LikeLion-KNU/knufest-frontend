@@ -1,6 +1,6 @@
 <center>
 
-# 2024 경북대 대동제 '하푸르나 웹페이지'
+# 🎉2024 경북대 대동제 '하푸르나 웹페이지'
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/169219a8-2b0c-4e4b-9377-58fa8b560c29" width="300" height="300"/>
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/c7930537-ce5d-4d52-8637-3bc9e7a9b500" width="300" height="300"/>
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1438b5d6-32ff-4da1-83d9-e2423893cae0" width="300" height="300"/>
@@ -10,7 +10,7 @@
 
 <br/><br/>
 
-# 프로젝트 소개
+# 🔔프로젝트 소개
  *  2024 경북대 대동제 '하푸르나'의 웹페이지
  *  하푸르나의 부스정보와 공연정보, 타임테이블을 제공
  *  축제의 시작시간, 종료시간을 실시간으로 제공
@@ -19,7 +19,7 @@
 
 <br/><br/>
 
-# 팀원 구성
+# 👥팀원 구성
 ## Front-End
 <table>
   <tbody>
@@ -45,7 +45,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 <br/><br/>
 
-# 프로젝트 구조
+# 📄프로젝트 구조
 ## Architecture
 
 ![아키텍처 사진](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/448bc4c6-b8f0-44d1-ad98-7ff3d188b449)
@@ -63,7 +63,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 <br/><br/>
 
-# 개발 기간 및 작업 관리
+# 📆개발 기간 및 작업 관리
 * 기획 및 디자인: 05/01 ~ 05/08
 * 개발: 05/07 ~ 05/19
 * 인프라 구축: 05/18 ~ 05/19
@@ -74,7 +74,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 
-# 페이지별 기능
+# ⚙️페이지별 기능
 ### 메인페이지
 <p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/31e20d3e-07d0-4b51-9027-c1706f5eb2b5" height="500"/>
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1c97f239-e073-46ac-a940-e63f1daae45b" height="500"/></p>
@@ -144,7 +144,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 <br/><br/>
 
-# Hotfix
+# 🛠️Hotfix
 
 ## Front-End
 1. 부스 안보임 버그부스 안보임 버그 (05/20 05:00 발견, 13:40 수정)
@@ -185,11 +185,12 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 <br/><br/>
 
-# 사용자 수 분석
+# 📝사용자 수 분석
 <p align="center"><img width="700" alt="IMG_7475" src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/8ace113e-67b0-4c36-ad63-99543a5fc7ac"></p>
 
  * 3시간에 500명, 5시간에 800명의 사용자 접속
  * 총 이용자 수: 1.1만
  * 총 이벤트 발생 횟수: 23만건
 
+<br/><br/>
 </center>
