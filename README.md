@@ -35,7 +35,17 @@
   </tbody>
 </table>
 
+#### Backend Repository
+https://github.com/LikeLion-KNU/knufest-backend
+
 # 프로젝트 구조
+## Architecture
+
+![아키텍처 사진](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/448bc4c6-b8f0-44d1-ad98-7ff3d188b449)
+
+
+<br/>
+
 ## 기술 스택
 ### Front-End
 
