@@ -1,3 +1,9 @@
+# 2024 경북대 대동제 '하푸르나 웹페이지'
+![카드뉴스_1](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/471dd2c9-a476-42dd-a3ad-bc79fd62976f)
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
