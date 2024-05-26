@@ -1,10 +1,11 @@
 # 2024 경북대 대동제 '하푸르나 웹페이지'
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/471dd2c9-a476-42dd-a3ad-bc79fd62976f" width="300" height="300"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/016a9f21-0913-4fed-b418-fc69edb29f50" width="300" height="300"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/d7b444ce-1593-4e20-a4cf-5f423919943d" width="300" height="300"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/3e17f361-b63a-46aa-9c51-2812d8009bf4" width="300" height="300"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/2b25f3b3-d9f9-40f8-9c43-480ede42985d" width="300" height="300"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/d013e896-3390-4de8-bf02-25d9fb66e805" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/169219a8-2b0c-4e4b-9377-58fa8b560c29" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/c7930537-ce5d-4d52-8637-3bc9e7a9b500" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1438b5d6-32ff-4da1-83d9-e2423893cae0" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/351b40d1-fd3a-4966-a274-e8a227f90c02" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/7c3ac281-0b9a-4a1b-b704-ff0ee0840cd1" width="300" height="300"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e59049d4-3bc6-48e9-8464-7f680788c158" width="300" height="300"/>
+
 
 # 프로젝트 소개
  *  2024 경북대 대동제 '하푸르나'의 웹페이지
