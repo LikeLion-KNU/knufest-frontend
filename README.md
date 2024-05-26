@@ -43,33 +43,85 @@
 
 # 페이지별 기능
 ### 메인페이지
-![IMG_7495](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/b955bd16-2d1c-4ba7-9206-cfc34f33887f)
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/31e20d3e-07d0-4b51-9027-c1706f5eb2b5" height="500"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1c97f239-e073-46ac-a940-e63f1daae45b" height="500"/>
+<br/><br/>
+
+* 하푸르나 웹페이지의 메인 화면
+* 축제 기간 실시간 확인
+* 하푸르나 웹페이지의 네비게이션 버튼
+* 총 사용자 수 확인
 
 
+<br/><br/>
 
 ### 부스별 지도
-![IMG_7496](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e7870c5b-18f4-419f-8586-dd59a07c3d6f)
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e7870c5b-18f4-419f-8586-dd59a07c3d6f" height="500"/>
+<br/><br/>
 
+* 스크롤과 확대,축소가 가능한 지도
+* 부스 번호와 부스이름, 학과이름이 적힌 부스 버튼
+* 각 부스별 좋아요 수 확인 및 좋아요 누르기 기능
+* 부스 버튼 클릭 시, 부스 세부 페이지로 이동
+
+<br/><br/>
+
+### 부스 세부페이지
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fe2aa1a1-7a54-4d06-aec4-94794f3e2c8e" height="500"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/615a8fcd-282b-4d77-b19c-19f78ff35944" height="500"/>
+<br/><br/>
+
+* 부스 정보 이미지 및 게시글 확인
+* 부스 이름과 학과, 좋아요 수 확인
+* 좋아요 누르기 기능
+* 댓글 입력 및 삭제 기능 (본인이 작성한 댓글만 삭제 가능.)
+* 댓글 입력 시, 자동 닉네임 및 댓글 입력 시간 함께 게시
+* 댓글 수가 많아지면, 댓글 페이지 수 증가
+
+<br/><br/>
 
 ### Special Guest
-![IMG_7497](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/ec8749df-a40a-43c3-aa78-60eb424b5092)
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/ec8749df-a40a-43c3-aa78-60eb424b5092" height="500"/>
+<br/><br/>
 
+* 날짜별 초청 가수 확인 및 타임 테이블 보기
+* 현재 시간 반영하여 타임 테이블에 불 들어오기
+* 현재 날짜 반영하여 날짜별 페이지 보이기
+
+<br/><br/>
 
 ### 이벤트 일정
-![IMG_7498](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fd4fcda8-ddee-4cbc-856f-d3371daf80fe)
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fd4fcda8-ddee-4cbc-856f-d3371daf80fe" height="500"/>
+<br/><br/>
 
+* 위치별 타임 테이블 보기
+* 현재 시간 반영하여 타임 테이블에 불 들어오기
+* 현재 날짜 반영하여 날짜별 페이지 보이기
+* 위치 버튼 클릭 시 해당 위치 타임 테이블로 이동
+
+<br/><br/>
 
 ### 만든이들
-![IMG_7499](https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/695f3a97-fa49-45ac-ab39-c331af3fd306)
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/695f3a97-fa49-45ac-ab39-c331af3fd306" height="500"/>
 
+<br/><br/>
 
+* '하푸르나 웹페이지' 개발자의 정보
+* 이름과 역할 등을 확인 가능.
 
+<br/><br/>
 
 # Hotfix
 
 
 
 # 사용자 수 분석
+<img width="700" alt="IMG_7475" src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/8ace113e-67b0-4c36-ad63-99543a5fc7ac">
+
+ * 3시간만에 500명, 5시간에 800명의 사용자 접속
+ * 총 이용자 수: 1.1만
+ * 총 이벤트 발생 횟수: 23만건
+
 
 
 
