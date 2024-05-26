@@ -23,19 +23,19 @@
 ## Front-End
 <table>
   <tbody>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/848fcc7c-e3c3-40c8-81a3-866adb15c628"width="100px;" alt=""/><br /><sub><b>김대건</b> </b></sub></a><br /></td>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/5b22cbf8-4abf-468c-b42e-8491d0e03ace" width="100px;" alt=""/><br /><sub><b>이효은</b></sub></a><br /></td>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/6b574a22-da53-414c-8d11-aa9753cef7c5" width="100px;" alt=""/><br /><sub><b>조동필</b></sub></a><br /></td>
-    <td align="center"><a href=""><img src="https://avatars.githubusercontent.com/u/18231524?v=4" width="100px;" alt=""/><br /><sub><b>채준혁</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/toothlessdev"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/848fcc7c-e3c3-40c8-81a3-866adb15c628"width="100px;" alt=""/><br /><sub><b>김대건</b> </b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Hyoeunkh"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/5b22cbf8-4abf-468c-b42e-8491d0e03ace" width="100px;" alt=""/><br /><sub><b>이효은</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/eastflimm"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/6b574a22-da53-414c-8d11-aa9753cef7c5" width="100px;" alt=""/><br /><sub><b>조동필</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/junyeokk"><img src="https://avatars.githubusercontent.com/u/18231524?v=4" width="100px;" alt=""/><br /><sub><b>채준혁</b></sub></a><br /></td>
   </tbody>
 </table>
 
 ## Back-End
 <table>
   <tbody>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/46fc1d4f-f939-4d18-a2d5-594500b6468b"width="100px;" alt=""/><br /><sub><b>이동건</b> </b></sub></a><br /></td>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/3f994eef-0f42-4a77-bde6-6df6a1aaa49e" width="100px;" alt=""/><br /><sub><b>전지웅</b></sub></a><br /></td>
-    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/71baadd5-713f-4665-9be1-ae3af385896f" width="100px;" alt=""/><br /><sub><b>최정식</b></sub></a><br /></td
+    <td align="center"><a href="https://github.com/himodu"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/46fc1d4f-f939-4d18-a2d5-594500b6468b"width="100px;" alt=""/><br /><sub><b>이동건</b> </b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/wldnd2"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/3f994eef-0f42-4a77-bde6-6df6a1aaa49e" width="100px;" alt=""/><br /><sub><b>전지웅</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/siksik-Choi"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/71baadd5-713f-4665-9be1-ae3af385896f" width="100px;" alt=""/><br /><sub><b>최정식</b></sub></a><br /></td
   </tbody>
 </table>
 
@@ -146,7 +146,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 # Hotfix
 
-## 프론트
+## Front-End
 1. 부스 안보임 버그부스 안보임 버그 (05/20 05:00 발견, 13:40 수정)
     * 문제점: 부스 디스크립션과 댓글 작성시간이 없으면 부스 상세페이지가 안보임
     * 이유: 부스 디스크립션과 댓글 작성시간이 없는 정보가 존재함.
@@ -165,7 +165,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 
 
-## 백
+## Back-End
 1. 좋아요 버그 (05/21 00:20 발견, 13:08 수정)
     * 문제점: 부스번호+2에 좋아요 +1이 반영됨.
     * 이유: 좋아요 +1 로직에서 boothID를 기준으로 동작하여 boothid와 boothnum이 일치하지 않으면 오류 발생
