@@ -25,7 +25,7 @@
   <tbody>
     <td align="center"><a href="https://github.com/toothlessdev"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/848fcc7c-e3c3-40c8-81a3-866adb15c628"width="100px;" alt=""/><br /><sub><b>김대건</b> </b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/Hyoeunkh"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/5b22cbf8-4abf-468c-b42e-8491d0e03ace" width="100px;" alt=""/><br /><sub><b>이효은</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/eastflimm"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/6b574a22-da53-414c-8d11-aa9753cef7c5" width="100px;" alt=""/><br /><sub><b>조동필</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/eastfilmm"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/6b574a22-da53-414c-8d11-aa9753cef7c5" width="100px;" alt=""/><br /><sub><b>조동필</b></sub></a><br /></td>
     <td align="center"><a href="https://github.com/junyeokk"><img src="https://avatars.githubusercontent.com/u/18231524?v=4" width="100px;" alt=""/><br /><sub><b>채준혁</b></sub></a><br /></td>
   </tbody>
 </table>
