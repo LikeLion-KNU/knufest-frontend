@@ -185,7 +185,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 <br/><br/>
 
-# 📝 2사용자 수 분석
+# 📝 사용자 수 분석
 <p align="center"><img width="700" alt="IMG_7475" src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/8ace113e-67b0-4c36-ad63-99543a5fc7ac"></p>
 
  * 3시간에 500명, 5시간에 800명의 사용자 접속
