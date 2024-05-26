@@ -1,3 +1,5 @@
+<center>
+
 # 2024 경북대 대동제 '하푸르나 웹페이지'
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/169219a8-2b0c-4e4b-9377-58fa8b560c29" width="300" height="300"/>
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/c7930537-ce5d-4d52-8637-3bc9e7a9b500" width="300" height="300"/>
@@ -6,6 +8,7 @@
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/7c3ac281-0b9a-4a1b-b704-ff0ee0840cd1" width="300" height="300"/>
 <img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e59049d4-3bc6-48e9-8464-7f680788c158" width="300" height="300"/>
 
+<br/><br/>
 
 # 프로젝트 소개
  *  2024 경북대 대동제 '하푸르나'의 웹페이지
@@ -14,6 +17,7 @@
  *  공식 서비스 기간: 2024.05.20 ~ 2024.05.24 (총 5일)
  *  총 이용자수: 1.1만 명, 총 이벤트 수: 23만 (Google Analytics 기준)
 
+<br/><br/>
 
 # 팀원 구성
 ## Front-End
@@ -38,6 +42,9 @@
 #### Backend Repository
 https://github.com/LikeLion-KNU/knufest-backend
 
+
+<br/><br/>
+
 # 프로젝트 구조
 ## Architecture
 
@@ -48,10 +55,13 @@ https://github.com/LikeLion-KNU/knufest-backend
 
 ## 기술 스택
 ### Front-End
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white"> <img src="https://img.shields.io/badge/vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"> <img src="https://img.shields.io/badge/amazon%20s3-569A31?style=for-the-badge&logo=amazon%20s3&logoColor=white"> <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=for-the-badge&logo=GitHub Actions&logoColor=white"> <img src="https://img.shields.io/badge/amazon%20route%2053-8C4FFF?style=for-the-badge&logo=amazon%20route%2053&logoColor=white">
 
 ### Back-End
-<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"> <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=for-the-badge&logo=GitHub Actions&logoColor=white">
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"> <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=Amazon%20EC2&logoColor=white"> <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=for-the-badge&logo=GitHub Actions&logoColor=white"> <img src="https://img.shields.io/badge/amazon%20route%2053-8C4FFF?style=for-the-badge&logo=amazon%20route%2053&logoColor=white">
 
+
+<br/><br/>
 
 # 개발 기간 및 작업 관리
 * 기획 및 디자인: 05/01 ~ 05/08
@@ -61,10 +71,13 @@ https://github.com/LikeLion-KNU/knufest-backend
 * 오픈 및 안정화: 05/20 ~ 05/22
 
 
+<br/><br/>
+
+
 # 페이지별 기능
 ### 메인페이지
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/31e20d3e-07d0-4b51-9027-c1706f5eb2b5" height="500"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1c97f239-e073-46ac-a940-e63f1daae45b" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/31e20d3e-07d0-4b51-9027-c1706f5eb2b5" height="500"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/1c97f239-e073-46ac-a940-e63f1daae45b" height="500"/></p>
 <br/><br/>
 
 * 하푸르나 웹페이지의 메인 화면
@@ -76,7 +89,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 ### 부스별 지도
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e7870c5b-18f4-419f-8586-dd59a07c3d6f" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/e7870c5b-18f4-419f-8586-dd59a07c3d6f" height="500"/></p>
 <br/><br/>
 
 * 스크롤과 확대,축소가 가능한 지도
@@ -87,8 +100,8 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 ### 부스 세부페이지
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fe2aa1a1-7a54-4d06-aec4-94794f3e2c8e" height="500"/>
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/615a8fcd-282b-4d77-b19c-19f78ff35944" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fe2aa1a1-7a54-4d06-aec4-94794f3e2c8e" height="500"/>
+<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/615a8fcd-282b-4d77-b19c-19f78ff35944" height="500"/></p>
 <br/><br/>
 
 * 부스 정보 이미지 및 게시글 확인
@@ -101,7 +114,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 ### Special Guest
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/ec8749df-a40a-43c3-aa78-60eb424b5092" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/ec8749df-a40a-43c3-aa78-60eb424b5092" height="500"/></p>
 <br/><br/>
 
 * 날짜별 초청 가수 확인 및 타임 테이블 보기
@@ -111,7 +124,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 ### 이벤트 일정
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fd4fcda8-ddee-4cbc-856f-d3371daf80fe" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/fd4fcda8-ddee-4cbc-856f-d3371daf80fe" height="500"/></p>
 <br/><br/>
 
 * 위치별 타임 테이블 보기
@@ -122,7 +135,7 @@ https://github.com/LikeLion-KNU/knufest-backend
 <br/><br/>
 
 ### 만든이들
-<img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/695f3a97-fa49-45ac-ab39-c331af3fd306" height="500"/>
+<p align="center"><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/695f3a97-fa49-45ac-ab39-c331af3fd306" height="500"/></p>
 
 <br/><br/>
 
@@ -170,14 +183,13 @@ https://github.com/LikeLion-KNU/knufest-backend
     * 이유: Transactional을 readonly로 설정하여 새로운 유저가 생성되지 않음
     * 해결: save가 있는 메소드에는 Transactional을 default로 설정하여 새로 생성되게 함.
 
-
-
+<br/><br/>
 
 # 사용자 수 분석
-<img width="700" alt="IMG_7475" src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/8ace113e-67b0-4c36-ad63-99543a5fc7ac">
+<p align="center"><img width="700" alt="IMG_7475" src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/8ace113e-67b0-4c36-ad63-99543a5fc7ac"></p>
 
- * 3시간만에 500명, 5시간에 800명의 사용자 접속
+ * 3시간에 500명, 5시간에 800명의 사용자 접속
  * 총 이용자 수: 1.1만
  * 총 이벤트 발생 횟수: 23만건
 
-
+</center>
