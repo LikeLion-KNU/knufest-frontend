@@ -16,14 +16,23 @@
 
 # 팀원 구성
 ## Front-End
-김대건
-이효은
-조동필
-채준혁
+<table>
+  <tbody>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/848fcc7c-e3c3-40c8-81a3-866adb15c628"width="100px;" alt=""/><br /><sub><b>김대건</b> </b></sub></a><br /></td>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/5b22cbf8-4abf-468c-b42e-8491d0e03ace" width="100px;" alt=""/><br /><sub><b>이효은</b></sub></a><br /></td>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/6b574a22-da53-414c-8d11-aa9753cef7c5" width="100px;" alt=""/><br /><sub><b>조동필</b></sub></a><br /></td>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/bfe38972-abd6-48a1-ad19-3e84fc38b24c" width="100px;" alt=""/><br /><sub><b>채준혁</b></sub></a><br /></td>
+  </tbody>
+</table>
+
 ## Back-End
-이동건
-전지웅
-최정식
+<table>
+  <tbody>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/46fc1d4f-f939-4d18-a2d5-594500b6468b"width="100px;" alt=""/><br /><sub><b>이동건</b> </b></sub></a><br /></td>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/3f994eef-0f42-4a77-bde6-6df6a1aaa49e" width="100px;" alt=""/><br /><sub><b>전지웅</b></sub></a><br /></td>
+    <td align="center"><a href=""><img src="https://github.com/LikeLion-KNU/knufest-frontend/assets/80188977/71baadd5-713f-4665-9be1-ae3af385896f" width="100px;" alt=""/><br /><sub><b>최정식</b></sub></a><br /></td
+  </tbody>
+</table>
 
 # 프로젝트 구조
 ## 기술 스택
